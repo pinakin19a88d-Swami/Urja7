@@ -1,0 +1,355 @@
+/* Reset Css */
+html, body, div, h1, h2, h3, h4, h5, h6, p, img, dl,
+  dt, dd, ol, ul, li, table, tr, td, form, object, embed,
+  article, aside, canvas, command, details, fieldset,
+  figcaption, figure, footer, group, header, hgroup, legend,
+  mark, menu, meter, nav, output, progress, section, summary,
+  time, audio, video {
+  	margin: 0;
+  	padding: 0;
+  	border: 0;
+}
+/* Commmon styles */
+body {
+	background-color: #585858;
+}
+
+.pageWrapper {
+	background: #fff;
+	width: 940px;
+	margin: 0 auto;
+}
+
+/*Header starts*/
+.header {
+	width: 940px;
+	/*height: 136px;*/
+	margin: 0 auto;
+	position: relative;
+	background-color: #ffffff;
+	box-shadow: 0 5px 8px rgba(0, 0, 0, 0.65); 
+	z-index: 50;
+}
+
+.companyLogo {
+	display: block;
+	width: 185px;
+	height: 56px;
+	float: left;
+	background-image: url("../images/UrjaLogo.png");
+	background-repeat: no-repeat;
+	margin: 40px 0 0 29px;
+	text-indent: -10000px;
+}
+
+.navbar-inner {
+	padding-left: 0px;
+	padding-right: 0px;
+	border: none;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	background-image: none;
+	background-color: #ffffff;
+	box-shadow: none;
+}
+
+.navbar-inner .nav > li > a {
+	font-size: 12px;
+	font-family: "Century Gothic";
+	padding: 30px 20px 10px 0px;
+	text-shadow: none;
+}
+
+.navbar-inner .nav > .blogIcon {
+	width: 70px;
+	background-image: url("../images/writingIcon.png");
+	background-repeat: no-repeat;
+	background-position: center right;
+}
+
+.navbar-inner .nav > .blogIcon:hover {
+	background-image: url("../images/writingIconRollover.png");
+}
+
+.navbar-inner .nav > li > a:hover {
+	color: #ff3333;
+}
+
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+	color: #ff3333;
+	background-color: #ffffff;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+}
+.navbar .nav {
+	float: right;
+	margin: 50px 50px 25px 0;
+}
+
+/* ---------- Services Navigation Styling ---------- */
+
+.navDivision {
+	width: 1px;
+	height: 8px;
+	background-color: #666666;
+	float: left;
+	margin: 8px 0 10px 0;
+}
+
+.servicesNav {
+	width: 940px;
+	min-height: 40px;
+	background-color: #cccccc;
+}
+
+.servicesNav > ul {
+	list-style: none;
+	padding: 10px 0 10px 0;
+}
+
+.servicesNav > ul > li {
+	float: left;
+	padding: 0 12px 0 12px;
+}
+
+.servicesNav > ul > li > a {
+	font-family: "Century Gothic";
+	font-size: 11px;
+	color: #330000;
+}
+
+/* ------------------------------------------------- */
+
+/* ---------- Footer Styling ---------- */
+.footerWrapper {
+	width: 940px;
+}
+
+.footerNavbar {
+	margin: 0 auto 0 0;
+}
+
+.footerNavbar-inner {
+	border: none;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	background-image: none;
+	background-color: #333333;
+	box-shadow: 0 -5px 8px rgba(35, 31, 32, 0.67);
+}
+
+.footerNavbar-inner .footerNav > li > a {
+	font-size: 12px;
+	font-family: "Century Gothic";
+	color: #999999;
+	padding: 10px 20px 10px 0px;
+	text-shadow: none;
+}
+
+.footerNavbar-inner .footerNav > li > a:hover {
+	color: #ff3333;
+}
+
+.footerNavbar .footerNav > .active > a, 
+.footerNavbar .footerNav > .active > a:hover, 
+.footerNavbar .footerNav > .active > a:focus {
+	color: #ff3333;
+	background-color: transparent;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+}
+
+.footerNavbar .footerNav {
+	float: left;
+	padding: 0 0 0 22px;
+	margin: 0 0 0 0;
+}
+
+/* ------------------------------------ */
+
+/* ---------- Aside Styling ---------- */
+
+.aside {
+	background: #8c8c8c;
+	min-height: 310px;
+}
+.aside > ul > li > span {
+	display: block;
+	position: absolute;
+	margin: -28px 0 0 0;
+}
+.aside #icon1 {
+	background-image: url("../images/asideIcons/icon1.png");
+}
+.aside .nav > li > a:hover + #icon1 {
+	background-image: url("../images/asideIcons/icon1Rollover.png");
+}
+
+.aside #icon2 {
+	background-image: url("../images/asideIcons/icon2.png");
+}
+.aside .nav > li > a:hover + #icon2 {
+	background-image: url("../images/asideIcons/icon2Rollover.png");
+}
+
+.aside #icon3 {
+	background-image: url("../images/asideIcons/icon3.png");
+}
+.aside .nav > li > a:hover + #icon3 {
+	background-image: url("../images/asideIcons/icon3Rollover.png");
+}
+
+.aside #icon4 {
+	background-image: url("../images/asideIcons/icon4.png");
+}
+.aside .nav > li > a:hover + #icon4 {
+	background-image: url("../images/asideIcons/icon4Rollover.png");
+}
+
+.aside #icon5 {
+	background-image: url("../images/asideIcons/icon5.png");
+}
+.aside .nav > li > a:hover + #icon5 {
+	background-image: url("../images/asideIcons/icon5Rollover.png");
+}
+
+#icon1, #icon2, #icon3, #icon4, #icon5 {
+	width: 36px;
+	height: 36px;
+	background-repeat: no-repeat;
+}
+
+.aside .nav {
+	margin: 60px 0 0 0;
+}
+.aside .nav > li {
+	width: 195px;
+	height: 36px;
+	margin: 10px 0 10px 0;
+}
+.aside .nav > li > a {
+	display: inline-block;
+	font-size: 12px;
+	font-family: "Century Gothic";
+	letter-spacing: .2px;
+	line-height: 16px;
+	color: #fff;
+	text-shadow: none;
+	padding: 0 0 0 0;
+	margin: 10px 0 0 46px;
+}
+.aside .nav > li > a:hover, 
+.aside .nav > li > a:focus {
+	background: none;
+}
+
+.urjaAdvantage {
+	height: 77px;
+	background-color: #ffffff;
+	margin: 25px 0 0 0;
+}
+.urjaAdvantage > h2 > a {
+	position: absolute;
+	text-decoration: none;
+	margin: 15px 0 0 0;
+}
+.urjaAdvantage > h2 > a > h3 {
+	height: 25px;
+	display: block;
+	font-family: "Century Gothic";
+	font-size: 15px;
+	font-weight: bold;
+	font-style: italic;
+	text-transform: uppercase;
+	letter-spacing: 1.8px;
+	color: #f03f45;
+	padding: 0 0 0 0;
+	margin: -5px 0 0 80px;
+}
+.urjaAdvantage > h2 > span {
+	display: block;
+	position: absolute;
+	margin: 15px 0 0 10px;
+}
+#icon6 {
+	width: 57px;
+	height: 57px;
+	background-repeat: no-repeat;
+}
+.urjaAdvantage #icon6 {
+	background-image: url("../images/asideIcons/icon6.png");
+	background-repeat: no-repeat;
+}
+.urjaAdvantage > h2 > a:hover + #icon6 {
+	background-image: url("../images/asideIcons/icon6Rollover.png");
+}
+
+.asideFooter {
+	background-color: #666666;
+	min-height: 630px;
+	box-shadow: -5px 0 4px rgba(35, 31, 32, 0.34);
+}
+.asideFooter .energyCon {
+	height: 52px;
+	background-color: #7a7a7a;
+	box-shadow: 0 3px 3px rgba(35, 31, 32, 0.30);
+}
+
+
+.asideFooter .energyCon > h2 > a {
+	position: absolute;
+	text-decoration: none;
+	margin: 5px 0 0 0;
+}
+.asideFooter .energyCon > h2 > a > h3 {
+	height: 25px;
+	display: block;
+	font-family: "Century Gothic";
+	font-size: 14px;
+	font-weight: normal;
+	color: #ffcc33;
+	padding: 0 0 0 0;
+	margin: -8px 0 0 60px;
+}
+.asideFooter .energyCon > h2 > span {
+	display: block;
+	position: absolute;
+	margin: 8px 0 0 15px;
+}
+#icon7 {
+	width: 37px;
+	height: 37px;
+	background-repeat: no-repeat;
+}
+.asideFooter .energyCon #icon7 {
+	background-image: url("../images/asideIcons/icon7.png");
+	background-repeat: no-repeat;
+}
+.asideFooter .energyCon > h2 > a:hover + #icon7 {
+	background-image: url("../images/asideIcons/icon7Rollover.png");
+}
+.asideFooter .nav {
+	margin: 10px 0 0 0;
+}
+.asideFooter .nav > li {
+	height: 25px;
+	margin: 0 0 0 10px;
+}
+.asideFooter .footerList > li > a {
+	margin: 10px 0 0 10px;
+}
+.asideFooter .nav > li > a:hover, .asideFooter .nav > li > a:focus {
+	text-decoration: underline;
+}
+
+/* ----------------------------------- */
+
+.positionRelative {
+	position: relative;
+	z-index: 10;
+}

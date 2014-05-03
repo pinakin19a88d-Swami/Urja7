@@ -1,0 +1,112 @@
+#aboutPage > .aboutUsBanner{
+	width: 571px;
+	height: 200px;
+	margin: 10px 0 10px 0;
+	background-image: url("../images/aboutUsBanner.jpg");
+	background-repeat: no-repeat;
+
+	-webkit-animation-delay: 0.7s;
+  	-moz-animation-delay: 0.7s;
+  	-o-animation-delay: 0.7s;
+  	animation-delay: 0.7s;
+}
+#aboutPage > .blueHeading {
+	font-weight: bold;
+	font-size: 14px;
+	color: #2995dc;
+	text-transform: uppercase;
+	letter-spacing: .2px;
+}
+#aboutPage > .redHeading {
+	font-weight: bold;
+	font-size: 14px;
+	color: #ff3333;
+	text-transform: uppercase;
+	letter-spacing: .2px;
+
+	-webkit-animation-delay: 1.2s;
+  	-moz-animation-delay: 1.2s;
+  	-o-animation-delay: 1.2s;
+  	animation-delay: 1.2s;
+}
+.mainBody {
+	font-family: "Century Gothic";
+	overflow: hidden;
+}
+.mainBody > #aboutPage > h2 {
+	font-size: 26px;
+	margin-top: 35px;
+
+	-webkit-animation-delay: 0.5s;
+  	-moz-animation-delay: 0.5s;
+  	-o-animation-delay: 0.5s;
+  	animation-delay: 0.5s;
+}
+#aboutPara1 {
+	-webkit-animation-delay: 1s;
+  	-moz-animation-delay: 1s;
+  	-o-animation-delay: 1s;
+  	animation-delay: 1s;
+}
+#aboutPara2 {
+	-webkit-animation-delay: 1.4s;
+  	-moz-animation-delay: 1.4s;
+  	-o-animation-delay: 1.4s;
+  	animation-delay: 1.4s;
+}
+.mainBody > #aboutPage > p {
+	width: 571px;
+	font-family: "Century Gothic";
+	font-size: 12px;
+	font-weight: normal;
+	text-align: justify;
+	letter-spacing: .2px;
+	line-height: 16px;
+	color: #666666;
+}
+#certHeading {
+	-webkit-animation-delay: 1.6s;
+  	-moz-animation-delay: 1.6s;
+  	-o-animation-delay: 1.6s;
+  	animation-delay: 1.6s;
+}
+.mainBody > #aboutPage > .approvals {
+	width: 632px;
+	position: relative;
+	font-family: "Century Gothic";
+	font-size: 12px;
+	font-weight: normal;
+	letter-spacing: .2px;
+	line-height: 16px;
+	color: #666666;
+	margin: 0 0 15px -15px;
+
+	-webkit-animation-delay: 1.8s;
+  	-moz-animation-delay: 1.8s;
+  	-o-animation-delay: 1.8s;
+  	animation-delay: 1.8s;
+}
+.mainBody > #aboutPage > .approvals > ul {
+	list-style: none;
+	background-color: #ededed;
+	padding: 15px 15px 5px 15px;
+}
+.mainBody > #aboutPage > .approvals > ul > li {
+	width: 580px;
+	margin: 0 0 15px 0;
+}
+.approvals > ul > li > p > span {
+	font-weight: bold;
+}
+.certificates {
+	width: 602px;
+	height: 135px;
+	background-image: url("../images/aboutUsCertificates.jpg");
+	background-repeat: no-repeat;
+	padding: 0 0 15px 0;
+
+	-webkit-animation-delay: 2s;
+  	-moz-animation-delay: 2s;
+  	-o-animation-delay: 2s;
+  	animation-delay: 2s;
+}
