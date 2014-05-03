@@ -101,20 +101,9 @@
 .nextPage {
 	width: 22px;
 	height: 16px;
-	background-image: url("../img/nextPageArrow.png");
+	background-image: url("../images/nextPageArrow.png");
 	background-repeat: no-repeat;
 	float: right;
 	margin: 20px 10px 0 0;
 	cursor: pointer;
 }
-
-/*.blogHeading, #para1, #para2, .blogImage1, .imageCaption, .blogLinks {
-	-webkit-animation-duration: 1s;
-	-webkit-animation-iteration-count: 1;
-	-moz-animation-duration: 1s;
-	-moz-animation-iteration-count: 1;
-	-o-animation-duration: 1s;
-	-o-animation-iteration-count: 1;
-	animation-duration: 1s;
-	animation-iteration-count: 1;
-}*/

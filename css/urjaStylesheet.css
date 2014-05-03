@@ -9,18 +9,25 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, img, dl,
   	padding: 0;
   	border: 0;
 }
-/* Commmon styles */
+/* ---------- Commmon styles ---------- */
 body {
 	background-color: #585858;
 }
 
+.positionRelative {
+	position: relative;
+	z-index: 10;
+}
 .pageWrapper {
 	background: #fff;
 	width: 940px;
 	margin: 0 auto;
 }
+#bodyContent {
+	padding: 35px 0 0 0;
+}
 
-/*Header starts*/
+/* ---------- Header starts ---------- */
 .header {
 	width: 940px;
 	/*height: 136px;*/
@@ -88,6 +95,104 @@ body {
 	margin: 50px 50px 25px 0;
 }
 
+/* ---------- Side Navigation Styling ---------- */
+
+.sidenav {
+  min-height: 100px;
+  /*background: #999;*/
+}
+.sidenav ul {
+  position: relative;
+  list-style: none;
+  padding-top: 50px;
+  margin-left: -5px;
+  /*border: #c00 solid 1px;*/
+}
+.sidenav ul > li {
+  width: 150px;
+  height: 27px;
+  font-family: "Century Gothic";
+  font-size: 14px;
+  text-align: center;
+  padding-top: 7px;
+  margin-left: -53px;
+  margin-bottom: 117px;
+  /*border: #fff solid 1px;*/
+}
+.sidenav ul > li > a {
+  color: #ffffff;
+  margin-left: -20px;
+  text-decoration: none;
+}
+
+.blueBG:before,
+.greenBG:before,
+.khakiBG:before,
+.orangeBG:before {
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+  position: relative;
+  content: '';
+  border-style: solid;
+  border-width: 10px 10px 0px 10px;
+  top: 35px;
+  z-index: -10;
+}
+.blueBG {
+  background-color: #2995dc;
+}
+.blueBG:before {
+  left: 30px;
+  border-color: #2995dc transparent transparent transparent;
+}
+.greenBG {
+  background-color: #73ac41;
+}
+.greenBG:before {
+  left: 40px;
+  border-color: #73ac41 transparent transparent transparent;
+}
+.khakiBG {
+  background-color: #ab8d50;
+}
+.khakiBG:before {
+  left: 60px;
+  border-color: #ab8d50 transparent transparent transparent;
+}
+.orangeBG {
+  background-color: #d08e2f;
+}
+.orangeBG:before {
+  left: 40px;
+  border-color: #d08e2f transparent transparent transparent;
+}
+.blueBG:hover,
+.greenBG:hover,
+.khakiBG:hover,
+.orangeBG:hover {
+  background-color: #666666;
+  cursor: pointer;
+}
+
+.blueBG:hover:before,
+.greenBG:hover:before,
+.khakiBG:hover:before,
+.orangeBG:hover:before {
+  border-color: #666666 transparent transparent transparent;
+}
+
+.textVertical {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+
+    /* Should be unset in IE9+ I think. */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
 /* ---------- Services Navigation Styling ---------- */
 
 .navDivision {
@@ -119,8 +224,6 @@ body {
 	font-size: 11px;
 	color: #330000;
 }
-
-/* ------------------------------------------------- */
 
 /* ---------- Footer Styling ---------- */
 .footerWrapper {
@@ -169,8 +272,6 @@ body {
 	padding: 0 0 0 22px;
 	margin: 0 0 0 0;
 }
-
-/* ------------------------------------ */
 
 /* ---------- Aside Styling ---------- */
 
@@ -349,7 +450,294 @@ body {
 
 /* ----------------------------------- */
 
-.positionRelative {
+/* ---------- About Us Styling ---------- */
+
+#aboutPage > .aboutUsBanner{
+	width: 571px;
+	height: 200px;
+	margin: 10px 0 10px 0;
+
+	-webkit-animation-delay: 0.7s;
+  	-moz-animation-delay: 0.7s;
+  	-o-animation-delay: 0.7s;
+  	animation-delay: 0.7s;
+}
+#aboutPage > .blueHeading {
+	font-weight: bold;
+	font-size: 14px;
+	color: #2995dc;
+	text-transform: uppercase;
+	letter-spacing: .2px;
+}
+#aboutPage > .redHeading {
+	font-weight: bold;
+	font-size: 14px;
+	color: #ff3333;
+	text-transform: uppercase;
+	letter-spacing: .2px;
+
+	-webkit-animation-delay: 1.2s;
+  	-moz-animation-delay: 1.2s;
+  	-o-animation-delay: 1.2s;
+  	animation-delay: 1.2s;
+}
+.mainBody {
+	font-family: "Century Gothic";
+	overflow: hidden;
+}
+.mainBody > #aboutPage > h2 {
+	font-size: 26px;
+	/*margin-top: 35px;*/
+
+	-webkit-animation-delay: 0.5s;
+  	-moz-animation-delay: 0.5s;
+  	-o-animation-delay: 0.5s;
+  	animation-delay: 0.5s;
+}
+#aboutPara1 {
+	-webkit-animation-delay: 1s;
+  	-moz-animation-delay: 1s;
+  	-o-animation-delay: 1s;
+  	animation-delay: 1s;
+}
+#aboutPara2 {
+	-webkit-animation-delay: 1.4s;
+  	-moz-animation-delay: 1.4s;
+  	-o-animation-delay: 1.4s;
+  	animation-delay: 1.4s;
+}
+.mainBody > #aboutPage > p {
+	width: 571px;
+	font-family: "Century Gothic";
+	font-size: 12px;
+	font-weight: normal;
+	text-align: justify;
+	letter-spacing: .2px;
+	line-height: 16px;
+	color: #666666;
+}
+#certHeading {
+	-webkit-animation-delay: 1.6s;
+  	-moz-animation-delay: 1.6s;
+  	-o-animation-delay: 1.6s;
+  	animation-delay: 1.6s;
+}
+.mainBody > #aboutPage > .approvals {
+	width: 632px;
 	position: relative;
-	z-index: 10;
+	font-family: "Century Gothic";
+	font-size: 12px;
+	font-weight: normal;
+	letter-spacing: .2px;
+	line-height: 16px;
+	color: #666666;
+	margin: 0 0 15px -15px;
+
+	-webkit-animation-delay: 1.8s;
+  	-moz-animation-delay: 1.8s;
+  	-o-animation-delay: 1.8s;
+  	animation-delay: 1.8s;
+}
+.mainBody > #aboutPage > .approvals > ul {
+	list-style: none;
+	background-color: #ededed;
+	padding: 15px 15px 5px 15px;
+}
+.mainBody > #aboutPage > .approvals > ul > li {
+	width: 580px;
+	margin: 0 0 15px 0;
+}
+.approvals > ul > li > p > span {
+	font-weight: bold;
+}
+.certificates {
+	width: 602px;
+	height: 135px;
+	background-image: url("../images/aboutUsCertificates.jpg");
+	background-repeat: no-repeat;
+	padding: 0 0 15px 0;
+
+	-webkit-animation-delay: 2s;
+  	-moz-animation-delay: 2s;
+  	-o-animation-delay: 2s;
+  	animation-delay: 2s;
+}
+
+/* ---------- Blog Styling ---------- */
+
+.aboutUsBanner{
+	width: 571px;
+	height: 200px;
+	margin: 10px 0 10px 0;
+	background-image: url("../images/aboutUsBanner.jpg");
+	background-repeat: no-repeat;
+}
+.blogHeading, .mainBody > #blogPage1 > h1 {
+	font-weight: bold;
+	font-size: 34px;
+	color: #669933;
+	text-transform: uppercase;
+	letter-spacing: .2px;
+	/*margin-top: 35px;*/
+
+  	-webkit-animation-delay: 0.5s;
+  	-moz-animation-delay: 0.5s;
+  	-o-animation-delay: 0.5s;
+  	animation-delay: 0.5s;
+}
+.greenPara {
+	display: inline-block;
+	width: 280px;
+	margin-top: 20px;
+	font-family: "Century Gothic";
+	font-size: 12px;
+	font-weight: normal;
+	letter-spacing: .2px;
+	line-height: 18px;
+	padding: 0 20px 0 0px;
+	color: #666666;
+	float: left;
+}
+.greenPara > .paraBullet {
+	font-family: "Webdings";
+	font-size: 10px;
+	color: #0066cc;
+}
+#para1 {
+  	-webkit-animation-delay: 1s;
+  	-moz-animation-delay: 1s;
+  	-o-animation-delay: 1s;
+  	animation-delay: 1s;
+}
+#para2 {
+  	-webkit-animation-delay: 1.5s;
+  	-moz-animation-delay: 1.5s;
+  	-o-animation-delay: 1.5s;
+  	animation-delay: 1.5s;
+}
+.blogImage1 {
+	display: inline-block;
+	/*width: 574px;
+	height: 431px;
+	background-image: url("../img/greenHouse.jpg");
+	background-repeat: no-repeat;*/
+	margin-top: 20px;
+
+  	-webkit-animation-delay: 1.7s;
+  	-moz-animation-delay: 1.7s;
+  	-o-animation-delay: 1.7s;
+  	animation-delay: 1.7s;
+}
+.imageCaption {
+	display: block;
+	font-family: "Century Gothic";
+	font-size: 12px;
+	font-weight: normal;
+	font-style: italic;
+	text-align: right;
+	letter-spacing: .2px;
+	line-height: 16px;
+	color: #003366;
+	margin-top: 10px;
+	margin-right: 50px;
+
+  	-webkit-animation-delay: 1.7s;
+  	-moz-animation-delay: 1.7s;
+  	-o-animation-delay: 1.7s;
+  	animation-delay: 1.7s;
+}
+.blogLinks {
+	font-family: "Century Gothic";
+	font-size: 12px;
+	font-weight: normal;
+	font-style: italic;
+	letter-spacing: .2px;
+	line-height: 16px;
+
+  	-webkit-animation-delay: 1.7s;
+  	-moz-animation-delay: 1.7s;
+  	-o-animation-delay: 1.7s;
+  	animation-delay: 1.7s;
+}
+.blogLinks > a {
+	display: inline-block;
+	width: 435px;
+	color: #003366;
+	float: left;
+}
+.nextPage {
+	width: 22px;
+	height: 16px;
+	background-image: url("../images/nextPageArrow.png");
+	background-repeat: no-repeat;
+	float: right;
+	margin: 20px 10px 0 0;
+	cursor: pointer;
+}
+
+/* --------- Energy Styling ---------- */
+
+#energyPage > .energyBanner{
+	width: 571px;
+	height: 200px;
+	margin: 10px 0 10px 0;
+
+	-webkit-animation-delay: 0.7s;
+  	-moz-animation-delay: 0.7s;
+  	-o-animation-delay: 0.7s;
+  	animation-delay: 0.7s;
+}
+#energyPage > .blueHeading {
+	font-weight: bold;
+	font-size: 14px;
+	color: #2995dc;
+	text-transform: uppercase;
+	letter-spacing: .2px;
+}
+#energyPage > .redHeading {
+	font-weight: bold;
+	font-size: 14px;
+	color: #ff3333;
+	text-transform: uppercase;
+	letter-spacing: .2px;
+
+	-webkit-animation-delay: 1.2s;
+  	-moz-animation-delay: 1.2s;
+  	-o-animation-delay: 1.2s;
+  	animation-delay: 1.2s;
+}
+.mainBody {
+	font-family: "Century Gothic";
+	overflow: hidden;
+}
+.mainBody > #energyPage > h2 {
+	font-size: 26px;
+	/*margin-top: 35px;*/
+
+	-webkit-animation-delay: 0.5s;
+  	-moz-animation-delay: 0.5s;
+  	-o-animation-delay: 0.5s;
+  	animation-delay: 0.5s;
+}
+#energyPara1 {
+	-webkit-animation-delay: 1s;
+  	-moz-animation-delay: 1s;
+  	-o-animation-delay: 1s;
+  	animation-delay: 1s;
+}
+#energyPara2 {
+	-webkit-animation-delay: 1.4s;
+  	-moz-animation-delay: 1.4s;
+  	-o-animation-delay: 1.4s;
+  	animation-delay: 1.4s;
+}
+.mainBody > #energyPage > p {
+	width: 571px;
+	font-family: "Century Gothic";
+	font-size: 12px;
+	font-weight: normal;
+	text-align: justify;
+	letter-spacing: .2px;
+	line-height: 16px;
+	color: #666666;
 }

@@ -5,18 +5,26 @@
 		<link rel="stylesheet" href="css/bootstrap.css"  type="text/css"/>
 		<link rel="stylesheet" href="css/animate.css">
 		<link rel="stylesheet" href="css/urjaStylesheet.css"  type="text/css"/>
-		<link rel="stylesheet" href="css/sideNavigation.css"  type="text/css"/>
+		<!-- <link rel="stylesheet" href="css/sideNavigation.css"  type="text/css"/>
 		<link rel="stylesheet" href="css/aboutUsStyle.css"  type="text/css"/>
-		<link rel="stylesheet" href="css/blogStyle.css"  type="text/css"/>
+		<link rel="stylesheet" href="css/blogStyle.css"  type="text/css"/> -->
 		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
 
-			  $("#nav2").click(function(){
+			  $("#aboutNav").click(function(){
 			    $("#bodyContent").load("ajax/aboutUsContent.html");
 			  });
-			  $("#nav7").click(function(){
+			  $("#blogNav").click(function(){
 			    $("#bodyContent").load("ajax/blogContent.html");
+			  });
+
+			  // ---------- Side Navigation Fuctions ----------
+			  $("#energySideNav").click(function(){
+			    $("#bodyContent").load("ajax/energyContent.html");
+			  });
+			  $("#energySideNav > a").click(function(){
+			    $("#bodyContent").load("ajax/energyContent.html");
 			  });
 			});
 		</script>
@@ -32,12 +40,12 @@
 		              	 <a href="#" class="companyLogo">Company Logo</a>   
 			                <ul class="nav">
 			                  <li class="active"><a href="#">Home</a></li>
-			                  <li><a id="nav2" href="#">About Us</a></li>
+			                  <li><a id="aboutNav" href="#">About Us</a></li>
 			                  <li><a href="#">Clean Energy</a></li>
 			                  <li><a href="#">Resource Base</a></li>
 			                  <li><a href="#">Careers</a></li>
 			                  <li><a href="#">Contact</a></li>
-			                  <li class="blogIcon"><a id="nav7" href="#">Blog</a></li>
+			                  <li class="blogIcon"><a id="blogNav" href="#">Blog</a></li>
 			                </ul>
 		              </div> <!-- container -->
 		            </div> <!-- navbar-inner -->
@@ -48,9 +56,10 @@
 				
 					<div class="span1 sidenav">
 						<ul class="">
-							<li class="textVertical blueBG"><a href="#">Solar Energy</a></li>
-							<li class="textVertical greenBG"><a href="#">Solar Pumping</a></li>
-							<li class="textVertical khakiBG"><a href="#">Energy Optimisation</a></li>
+							<li class="textVertical blueBG" id="energySideNav"><a href="#">Solar Energy</a></li>
+							<li class="textVertical greenBG" id="pumpingSideNav"><a href="#">Solar Pumping</a></li>
+							<li class="textVertical khakiBG" id="optSideNav"><a href="#">Energy Optimisation</a></li>
+							<li class="textVertical orangeBG" id="productSideNav"><a href="#">Solar Product</a></li>
 						</ul>
 					</div><!-- span1 -->
 

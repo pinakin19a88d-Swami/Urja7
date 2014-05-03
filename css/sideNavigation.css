@@ -28,7 +28,10 @@
   text-decoration: none;
 }
 
-.blueBG:before, .greenBG:before, .khakiBG:before {
+.blueBG:before,
+.greenBG:before,
+.khakiBG:before,
+.orangeBG:before {
   width: 20px;
   height: 20px;
   pointer-events: none;
@@ -60,11 +63,25 @@
   left: 60px;
   border-color: #ab8d50 transparent transparent transparent;
 }
-.blueBG:hover, .greenBG:hover, .khakiBG:hover {
+.orangeBG {
+  background-color: #d08e2f;
+}
+.orangeBG:before {
+  left: 40px;
+  border-color: #d08e2f transparent transparent transparent;
+}
+.blueBG:hover,
+.greenBG:hover,
+.khakiBG:hover,
+.orangeBG:hover {
   background-color: #666666;
+  cursor: pointer;
 }
 
-.blueBG:hover:before, .greenBG:hover:before, .khakiBG:hover:before {
+.blueBG:hover:before,
+.greenBG:hover:before,
+.khakiBG:hover:before,
+.orangeBG:hover:before {
   border-color: #666666 transparent transparent transparent;
 }
 
@@ -78,5 +95,3 @@
     /* Should be unset in IE9+ I think. */
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
-
-/* --------------------------------------------- */
