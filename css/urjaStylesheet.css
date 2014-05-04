@@ -12,6 +12,9 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, img, dl,
 /* ---------- Commmon styles ---------- */
 body {
 	background-color: #585858;
+	font-family: 'Muli', sans-serif;
+	font-size: 14px;
+	line-height: 16px;
 }
 
 .positionRelative {
@@ -62,7 +65,7 @@ body {
 
 .navbar-inner .nav > li > a {
 	font-size: 12px;
-	font-family: "Century Gothic";
+	/*font-family: "Century Gothic";*/
 	padding: 30px 20px 10px 0px;
 	text-shadow: none;
 }
@@ -111,7 +114,7 @@ body {
 .sidenav ul > li {
   width: 150px;
   height: 27px;
-  font-family: "Century Gothic";
+  /*font-family: "Century Gothic";*/
   font-size: 14px;
   text-align: center;
   padding-top: 7px;
@@ -220,7 +223,7 @@ body {
 }
 
 .servicesNav > ul > li > a {
-	font-family: "Century Gothic";
+	/*font-family: "Century Gothic";*/
 	font-size: 11px;
 	color: #330000;
 }
@@ -246,7 +249,7 @@ body {
 
 .footerNavbar-inner .footerNav > li > a {
 	font-size: 12px;
-	font-family: "Century Gothic";
+	/*font-family: "Century Gothic";*/
 	color: #999999;
 	padding: 10px 20px 10px 0px;
 	text-shadow: none;
@@ -343,7 +346,7 @@ body {
 .aside .nav > li > a {
 	display: inline-block;
 	font-size: 12px;
-	font-family: "Century Gothic";
+	/*font-family: "Century Gothic";*/
 	letter-spacing: .2px;
 	line-height: 16px;
 	color: #fff;
@@ -369,7 +372,7 @@ body {
 .urjaAdvantage > h2 > a > h3 {
 	height: 25px;
 	display: block;
-	font-family: "Century Gothic";
+	/*font-family: "Century Gothic";*/
 	font-size: 15px;
 	font-weight: bold;
 	font-style: italic;
@@ -420,7 +423,7 @@ body {
 .asideFooter .energyCon > h2 > a > h3 {
 	height: 25px;
 	display: block;
-	font-family: "Century Gothic";
+	/*font-family: "Century Gothic";*/
 	font-size: 14px;
 	font-weight: normal;
 	color: #ffcc33;
@@ -495,7 +498,7 @@ body {
   	animation-delay: 1.2s;
 }
 .mainBody {
-	font-family: "Century Gothic";
+	/*font-family: "Century Gothic";*/
 	overflow: hidden;
 }
 .mainBody > #aboutPage > h2 {
@@ -521,7 +524,7 @@ body {
 }
 .mainBody > #aboutPage > p {
 	width: 571px;
-	font-family: "Century Gothic";
+	/*font-family: "Century Gothic";*/
 	font-size: 12px;
 	font-weight: normal;
 	text-align: justify;
@@ -538,7 +541,7 @@ body {
 .mainBody > #aboutPage > .approvals {
 	width: 632px;
 	position: relative;
-	font-family: "Century Gothic";
+	/*font-family: "Century Gothic";*/
 	font-size: 12px;
 	font-weight: normal;
 	letter-spacing: .2px;
@@ -602,7 +605,7 @@ body {
 	display: inline-block;
 	width: 280px;
 	margin-top: 20px;
-	font-family: "Century Gothic";
+	/*font-family: "Century Gothic";*/
 	font-size: 12px;
 	font-weight: normal;
 	letter-spacing: .2px;
@@ -643,7 +646,7 @@ body {
 }
 .imageCaption {
 	display: block;
-	font-family: "Century Gothic";
+	/*font-family: "Century Gothic";*/
 	font-size: 12px;
 	font-weight: normal;
 	font-style: italic;
@@ -660,7 +663,7 @@ body {
   	animation-delay: 1.7s;
 }
 .blogLinks {
-	font-family: "Century Gothic";
+	/*font-family: "Century Gothic";*/
 	font-size: 12px;
 	font-weight: normal;
 	font-style: italic;
@@ -726,7 +729,7 @@ body {
   	animation-delay: 1.8s;
 }
 .mainBody {
-	font-family: "Century Gothic";
+	/*font-family: "Century Gothic";*/
 	overflow: hidden;
 }
 .mainBody > #energyPage > h2 {
@@ -787,7 +790,7 @@ i {
 .mainBody > #energyPage > p,
 #energyPage > .bulletPts > ul > li > p {
 	width: 571px;
-	font-family: "Century Gothic";
+	/*font-family: "Century Gothic";*/
 	font-size: 12px;
 	font-weight: normal;
 	text-align: justify;
@@ -812,12 +815,67 @@ i {
 	float: left;
 	background: #2995dc;
 }
+.blueBox {
+	-webkit-box-shadow: 4px 0 4px rgba(35,31,32,.34); 
+	-o-box-shadow: 4px 0 4px rgba(35,31,32,.34); 
+	-moz-box-shadow: 4px 0 4px rgba(35,31,32,.34); 
+	box-shadow: 4px 0 4px rgba(35,31,32,.34);
+	position: relative;
+	z-index: 10;
+}
 .greenBox, .solarPumpingImg  {
 	width: 224px;
 	background: #73ac41;
 	float: left;
 }
+.greenBox {
+	-webkit-box-shadow: 0 5px 3px rgba(35,31,32,.4); 
+	-o-box-shadow: 0 5px 3px rgba(35,31,32,.4); 
+	-moz-box-shadow: 0 5px 3px rgba(35,31,32,.4); 
+	box-shadow: 0 5px 3px rgba(35,31,32,.4);
+	position: relative;
+	z-index: 10;
+}
 .yellowOchreBox, .energyOptImg {
 	background: #ab8d50;
 	height: 186px;
+}
+.yellowOchreBox {
+	-webkit-box-shadow: -5px 0 3px rgba(35,31,32,.4); 
+	-o-box-shadow: -5px 0 3px rgba(35,31,32,.4); 
+	-moz-box-shadow: -5px 0 3px rgba(35,31,32,.4); 
+	box-shadow: -5px 0 3px rgba(35,31,32,.4);
+	position: relative;
+	z-index: 10;
+}
+a.solarEnergy {
+	display: block;
+	float: left;
+}
+a.solarEnergy:hover .blueBox {
+	background: #fff;
+}
+a.solarEnergy:hover .blueBox div span {
+	color: #ccc;
+}
+a.solarEnergy:hover .blueBox div span.white {
+	color: #666;
+}
+.blueBox div {
+	padding: 88px 0 0 12px;
+}
+.blueBox div span {
+	color: #10476b;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: -1px;
+	display: block;
+	word-spacing: 1px;
+}
+.blueBox div span.white {
+	color: #fff;
+	margin-left: 50px;
+}
+.natural {
+	margin-left: 10px;
 }
