@@ -12,7 +12,8 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, img, dl,
 /* ---------- Commmon styles ---------- */
 body {
 	/*background-color: #585858;*/
-	background-color: #888;
+	/*background-color: #888;*/
+	background-color: #d1d3d4;
 	font-family: 'Muli', sans-serif;
 	font-size: 14px;
 	line-height: 16px;
@@ -26,6 +27,11 @@ body {
 	background: #fff;
 	width: 940px;
 	margin: 0 auto;
+
+	-webkit-box-shadow: 0 0 8px rgba(35,31,32,.4); 
+	-o-box-shadow: 0 0 8px rgba(35,31,32,.4); 
+	-moz-box-shadow: 0 0 8px rgba(35,31,32,.4); 
+	box-shadow: 0 0 8px rgba(35,31,32,.4);
 }
 #bodyContent {
 	padding: 35px 0 0 0;
@@ -412,7 +418,7 @@ body {
 .asideFooter .energyCon {
 	height: 52px;
 	background-color: #7a7a7a;
-	box-shadow: 0 3px 3px rgba(35, 31, 32, 0.30);
+	/*box-shadow: 0 3px 3px rgba(35, 31, 32, 0.30);*/
 }
 
 
@@ -860,18 +866,17 @@ a.solarEnergy, a.energyOpti, a.solarPumpingText,  a.solarPumping {
  }
 a.solarEnergy:hover .blueBox, 
 a.energyOpti:hover .yellowOchreBox, 
-a.solarPumpingText:hover .greenBox,
-a.solarPumping:hover a.solarPumpingText .greenBox {
+a.solarPumping:hover .greenBox {
 	background: #fff;
 }
-a.solarEnergy:hover .blueBox .blueArrow {
-	background:url(../images/arrow_white_right.png) no-repeat;
-}
 a.solarEnergy:hover .blueBox .linkText span, 
-a.energyOpti:hover .yellowOchreBox .linkText span  {
+a.energyOpti:hover .yellowOchreBox .linkText span,
+a.solarPumping:hover .greenBox .linkText span {
 	color: #ccc;
 }
-a.solarEnergy:hover .blueBox .linkText span.white {
+a.solarEnergy:hover .blueBox .linkText span.white,
+a.energyOpti:hover .yellowOchreBox .linkText span.white,
+a.solarPumping:hover .greenBox .linkText span.white {
 	color: #666;
 }
 .blueBox .linkText {
@@ -880,7 +885,12 @@ a.solarEnergy:hover .blueBox .linkText span.white {
 .yellowOchreBox .linkText {
 	padding: 40px 0 0 5px;
 }
-.blueBox .linkText span, .yellowOchreBox .linkText span   {	
+.greenBox .linkText {
+	padding: 110px 0 0 30px;
+}
+.blueBox .linkText span, 
+.yellowOchreBox .linkText span,
+.greenBox .linkText span   {	
 	font-size: 16px;
 	line-height: 20px;
 	letter-spacing: -1px;
@@ -891,12 +901,18 @@ a.solarEnergy:hover .blueBox .linkText span.white {
 .yellowOchreBox .linkText span {
 	color: #523f19;
 }
+.greenBox .linkText span  {
+	color: #2d4a13;
+}
 
 .blueBox .linkText span.white {
 	color: #fff;
 	margin-left: 50px;
 }
 .yellowOchreBox .linkText span.white {
+	color: #fff;
+}
+.greenBox .linkText span.white {
 	color: #fff;
 }
 .natural {
@@ -924,26 +940,36 @@ a.solarEnergy:hover .blueBox .linkText span.white {
 	right: -25px;
 	top: 115px;
 }
+.greenArrow {
+	width: 39px;
+	height: 25px;
+	background:url(../images/arrow_green.png) no-repeat;
+	right: 134px;
+	top: 206px;
+}
 .ochreArrow {
 	background:url(../images/arrow_ochre.png) no-repeat;
 	left: -24px;
 	top: 92px;
 }
+a.solarEnergy:hover .blueBox .blueArrow {
+	background:url(../images/arrow_white_right.png) no-repeat;
+}
 a.energyOpti:hover .yellowOchreBox .ochreArrow {
 	background:url(../images/arrow_white_left.png) no-repeat;
 }
-a.energyOpti:hover .yellowOchreBox .linkText span.white {
-	color: #666;
+a.solarPumping:hover .greenBox .greenArrow {
+	background:url(../images/arrow_white_down.png) no-repeat;
 }
 
 .flexible {
-	margin-left: 
+	margin-left: 89px;
 }
 .economical {
-	margin-left: 
+	margin-left: 55px;
 }
 .reliable {
-	margin-left: 
+	margin-left: 25px;
 }
 .middle {
 	width: 376px;
