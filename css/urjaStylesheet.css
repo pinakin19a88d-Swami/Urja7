@@ -275,51 +275,58 @@ body {
 
 /* ---------- Aside Styling ---------- */
 
+.container > .bgImage {
+	/*margin: 0 0 0 20px;*/
+	background: url("../images/asideIcons/asideBG.jpg") repeat-y;
+}
 .aside {
 	background: #8c8c8c;
 	min-height: 310px;
 }
-.aside > ul > li > span {
+/*.aside > ul > li > span {
 	display: block;
 	position: absolute;
 	margin: -28px 0 0 0;
-}
+}*/
 .aside #icon1 {
 	background-image: url("../images/asideIcons/icon1.png");
 }
-.aside .nav > li > a:hover + #icon1 {
+.aside .nav > li > a:hover > #icon1 {
 	background-image: url("../images/asideIcons/icon1Rollover.png");
 }
 
 .aside #icon2 {
 	background-image: url("../images/asideIcons/icon2.png");
 }
-.aside .nav > li > a:hover + #icon2 {
+.aside .nav > li > a:hover > #icon2 {
 	background-image: url("../images/asideIcons/icon2Rollover.png");
 }
 
 .aside #icon3 {
 	background-image: url("../images/asideIcons/icon3.png");
 }
-.aside .nav > li > a:hover + #icon3 {
+.aside .nav > li > a:hover > #icon3 {
 	background-image: url("../images/asideIcons/icon3Rollover.png");
 }
 
 .aside #icon4 {
 	background-image: url("../images/asideIcons/icon4.png");
 }
-.aside .nav > li > a:hover + #icon4 {
+.aside .nav > li > a:hover > #icon4 {
 	background-image: url("../images/asideIcons/icon4Rollover.png");
 }
 
 .aside #icon5 {
 	background-image: url("../images/asideIcons/icon5.png");
 }
-.aside .nav > li > a:hover + #icon5 {
+.aside .nav > li > a:hover > #icon5 {
 	background-image: url("../images/asideIcons/icon5Rollover.png");
 }
 
 #icon1, #icon2, #icon3, #icon4, #icon5 {
+	display: block;
+	position: absolute;
+	margin: -10px 0px 0 -47px;
 	width: 36px;
 	height: 36px;
 	background-repeat: no-repeat;
@@ -372,21 +379,24 @@ body {
 	padding: 0 0 0 0;
 	margin: -5px 0 0 80px;
 }
-.urjaAdvantage > h2 > span {
+/*.urjaAdvantage > h2 > span {
 	display: block;
 	position: absolute;
 	margin: 15px 0 0 10px;
-}
+}*/
 #icon6 {
 	width: 57px;
 	height: 57px;
+	display: block;
+	position: absolute;
+	margin: -3px 0 0 10px;
 	background-repeat: no-repeat;
 }
 .urjaAdvantage #icon6 {
 	background-image: url("../images/asideIcons/icon6.png");
 	background-repeat: no-repeat;
 }
-.urjaAdvantage > h2 > a:hover + #icon6 {
+.urjaAdvantage > h2 > a:hover > #icon6 {
 	background-image: url("../images/asideIcons/icon6Rollover.png");
 }
 
@@ -417,21 +427,24 @@ body {
 	padding: 0 0 0 0;
 	margin: -8px 0 0 60px;
 }
-.asideFooter .energyCon > h2 > span {
+/*.asideFooter .energyCon > h2 > span {
 	display: block;
 	position: absolute;
 	margin: 8px 0 0 15px;
-}
+}*/
 #icon7 {
 	width: 37px;
 	height: 37px;
+	display: block;
+	position: absolute;
+	margin: 3px 0 0 15px;
 	background-repeat: no-repeat;
 }
 .asideFooter .energyCon #icon7 {
 	background-image: url("../images/asideIcons/icon7.png");
 	background-repeat: no-repeat;
 }
-.asideFooter .energyCon > h2 > a:hover + #icon7 {
+.asideFooter .energyCon > h2 > a:hover > #icon7 {
 	background-image: url("../images/asideIcons/icon7Rollover.png");
 }
 .asideFooter .nav {
@@ -693,6 +706,11 @@ body {
 	color: #2995dc;
 	text-transform: uppercase;
 	letter-spacing: .2px;
+
+	-webkit-animation-delay: 1.4s;
+  	-moz-animation-delay: 1.4s;
+  	-o-animation-delay: 1.4s;
+  	animation-delay: 1.4s;
 }
 #energyPage > .redHeading {
 	font-weight: bold;
@@ -700,11 +718,12 @@ body {
 	color: #ff3333;
 	text-transform: uppercase;
 	letter-spacing: .2px;
+	margin: 0 0 10px 0;
 
-	-webkit-animation-delay: 1.2s;
-  	-moz-animation-delay: 1.2s;
-  	-o-animation-delay: 1.2s;
-  	animation-delay: 1.2s;
+	-webkit-animation-delay: 1.8s;
+  	-moz-animation-delay: 1.8s;
+  	-o-animation-delay: 1.8s;
+  	animation-delay: 1.8s;
 }
 .mainBody {
 	font-family: "Century Gothic";
@@ -719,19 +738,54 @@ body {
   	-o-animation-delay: 0.5s;
   	animation-delay: 0.5s;
 }
+i {
+	display: inline-block;
+	width: 11px;
+	height: 11px;
+	background: url("../images/Urja_sprite.png") 0 0 no-repeat;
+	margin: 2px 5px 0 0;
+}
+#bp1 {
+	-webkit-animation-delay: 1.2s;
+  	-moz-animation-delay: 1.2s;
+  	-o-animation-delay: 1.2s;
+  	animation-delay: 1.2s;
+}
+#bp2 {
+	-webkit-animation-delay: 1.6s;
+  	-moz-animation-delay: 1.6s;
+  	-o-animation-delay: 1.6s;
+  	animation-delay: 1.6s;
+}
+#bp3 {
+	-webkit-animation-delay: 2.2s;
+  	-moz-animation-delay: 2.2s;
+  	-o-animation-delay: 2.2s;
+  	animation-delay: 2.2s;
+}
 #energyPara1 {
 	-webkit-animation-delay: 1s;
   	-moz-animation-delay: 1s;
   	-o-animation-delay: 1s;
   	animation-delay: 1s;
+  	margin: 0 0 10px 0;
 }
 #energyPara2 {
 	-webkit-animation-delay: 1.4s;
   	-moz-animation-delay: 1.4s;
   	-o-animation-delay: 1.4s;
   	animation-delay: 1.4s;
+  	margin: 0 0 10px 0;
 }
-.mainBody > #energyPage > p {
+#energyPara3 {
+	-webkit-animation-delay: 2s;
+  	-moz-animation-delay: 2s;
+  	-o-animation-delay: 2s;
+  	animation-delay: 2s;
+  	margin: 0 0 10px 0;
+}
+.mainBody > #energyPage > p,
+#energyPage > .bulletPts > ul > li > p {
 	width: 571px;
 	font-family: "Century Gothic";
 	font-size: 12px;
@@ -740,6 +794,7 @@ body {
 	letter-spacing: .2px;
 	line-height: 16px;
 	color: #666666;
+  	margin: 0 0 10px 0;
 }
 
 .sliderWrapper {
