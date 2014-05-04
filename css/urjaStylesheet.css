@@ -741,3 +741,28 @@ body {
 	line-height: 16px;
 	color: #666666;
 }
+
+.sliderWrapper {
+	float: left;
+	width: 340px;
+}
+.imgBtnWrapper {
+	/*width: 590px;*/
+	width: 600px;
+	float: left;
+}
+.blueBox, .solarImg, .greenBox, .energyOptImg, .yellowOchreBox {
+	width: 188px;
+	height: 208px;
+	float: left;
+	background: #2995dc;
+}
+.greenBox, .solarPumpingImg  {
+	width: 224px;
+	background: #73ac41;
+	float: left;
+}
+.yellowOchreBox, .energyOptImg {
+	background: #ab8d50;
+	height: 186px;
+}
