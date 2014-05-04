@@ -5,12 +5,14 @@
 		<link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/bootstrap.css"  type="text/css"/>
 		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/slider.css">
 		<link rel="stylesheet" href="css/urjaStylesheet.css"  type="text/css"/>
 
 		<!-- <link rel="stylesheet" href="css/sideNavigation.css"  type="text/css"/>
 		<link rel="stylesheet" href="css/aboutUsStyle.css"  type="text/css"/>
 		<link rel="stylesheet" href="css/blogStyle.css"  type="text/css"/> -->
 		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="js/jquery.cycle2.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
 
@@ -58,38 +60,70 @@
 					<div class="span12">
 
 						<div class="sliderWrapper">
-							<img src="images/slide_1.jpg">							
+							<div class="cycle-slideshow">
+								<div class="cycle-pager"></div>
+
+								<img src="images/slide_1.jpg">
+								<img src="images/slide_2.jpg">
+								<img src="images/slide_3.jpg">
+								<img src="images/slide_4.jpg">
+								<img src="images/slide_5.jpg">
+							</div>					
 						</div> <!-- sliderWrapper -->
 
 						<div class="imgBtnWrapper">
-							<a href="#" class="solarEnergy">
-								<div class="blueBox clearfix">
-									<div>
+							<div class="pull-left middle">
+								<a href="#" class="solarEnergy">
+									<div class="blueBox clearfix">
+										<div class="linkText">
 											<span>FREE, CLEAN &amp; </span>
 											<span class ="natural">NATURAL RESOURCE </span>
-											<span class="white">SOLAR ENERGY</span></div>
-								</div><!-- blueBox -->
+											<span class="white">SOLAR ENERGY</span>
+										</div> <!-- linkText -->
 
-								<div class="solarImg clearfix">
-									<img src="images/solar_energy.jpg" alt="solar Energy">
-								</div><!-- solarImg -->	
+										<div class="arrow blueArrow "></div>
+									</div><!-- blueBox -->
+									
+
+									<div class="solarImg clearfix">
+										<img src="images/solar_energy.jpg" alt="solar Energy">
+									</div><!-- solarImg -->	
+								</a>
+								
+								<a href="#" class="energyOpti">
+									<div class="energyOptImg clearfix">
+										<img src="images/energy_optimisation.jpg" alt="Energy Optimisation">
+									</div><!-- energyOptImg -->
+
+									<div class="yellowOchreBox clearfix">
+										<div class="linkText">
+											<span class="renewable">RENEWABLE,</span>
+											<span class ="green">GREEN </span>
+											<span class ="efficient">&amp; EFFICIENT</span>
+											<span class="white">ENERGY OPTIMISATION</span>
+										</div> <!-- linkText -->
+
+										<div class="arrow ochreArrow "></div>
+									</div><!-- yellowOchreBox -->
+								</a>
+							</div>
+
+							<a href="#" class="solarPumping">
+								<div class="greenBox clearfix">
+									<div class="linkText">
+											<span class="flexible">FLEXIBLE,</span>
+											<span class ="economical">ECONOMICAL, </span>
+											<span class ="reliable">&amp; RELIBLE </span>
+											<span class="white">SOLAR PUMPING</span>
+										</div> <!-- linkText -->
+
+										<div class="arrow greenArrow "></div>
+								</div><!-- greenBox -->
+													
+								<div class="solarPumpingImg clearfix">
+									<img src="images/solar_pumping.jpg" alt="Solar Pumping">
+								</div><!-- solarPumpingImg -->
 							</a>
-
-							<div class="greenBox clearfix">
-							
-							</div><!-- greenBox -->
-
-							<div class="energyOptImg clearfix">
-								<img src="images/energy_optimisation.jpg" alt="Energy Optimisation">
-							</div><!-- energyOptImg -->
-
-							<div class="yellowOchreBox clearfix">
-							
-							</div><!-- yellowOchreBox -->
-
-							<div class="solarPumpingImg clearfix">
-								<img src="images/solar_pumping.jpg" alt="Solar Pumping">
-							</div><!-- solarPumpingImg -->
 
 						</div><!-- imgBtnWrapper -->				
 					</div><!-- span12 -->

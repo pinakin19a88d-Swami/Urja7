@@ -11,7 +11,8 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, img, dl,
 }
 /* ---------- Commmon styles ---------- */
 body {
-	background-color: #585858;
+	/*background-color: #585858;*/
+	background-color: #888;
 	font-family: 'Muli', sans-serif;
 	font-size: 14px;
 	line-height: 16px;
@@ -748,6 +749,7 @@ body {
 .sliderWrapper {
 	float: left;
 	width: 340px;
+	overflow: hidden;
 }
 .imgBtnWrapper {
 	/*width: 590px;*/
@@ -771,7 +773,7 @@ body {
 .greenBox, .solarPumpingImg  {
 	width: 224px;
 	background: #73ac41;
-	float: left;
+	/*float: left;*/
 }
 .greenBox {
 	-webkit-box-shadow: 0 5px 3px rgba(35,31,32,.4); 
@@ -793,34 +795,101 @@ body {
 	position: relative;
 	z-index: 10;
 }
-a.solarEnergy {
+a.solarEnergy, a.energyOpti, a.solarPumpingText,  a.solarPumping {
 	display: block;
 	float: left;
+	position: relative;
 }
-a.solarEnergy:hover .blueBox {
+ a.solarPumping {
+ 	float: right;
+ }
+a.solarEnergy:hover .blueBox, 
+a.energyOpti:hover .yellowOchreBox, 
+a.solarPumpingText:hover .greenBox,
+a.solarPumping:hover a.solarPumpingText .greenBox {
 	background: #fff;
 }
-a.solarEnergy:hover .blueBox div span {
+a.solarEnergy:hover .blueBox .blueArrow {
+	background:url(../images/arrow_white_right.png) no-repeat;
+}
+a.solarEnergy:hover .blueBox .linkText span, 
+a.energyOpti:hover .yellowOchreBox .linkText span  {
 	color: #ccc;
 }
-a.solarEnergy:hover .blueBox div span.white {
+a.solarEnergy:hover .blueBox .linkText span.white {
 	color: #666;
 }
-.blueBox div {
+.blueBox .linkText {
 	padding: 88px 0 0 12px;
 }
-.blueBox div span {
-	color: #10476b;
+.yellowOchreBox .linkText {
+	padding: 40px 0 0 5px;
+}
+.blueBox .linkText span, .yellowOchreBox .linkText span   {	
 	font-size: 16px;
 	line-height: 20px;
 	letter-spacing: -1px;
 	display: block;
 	word-spacing: 1px;
+	color: #10476b;
 }
-.blueBox div span.white {
+.yellowOchreBox .linkText span {
+	color: #523f19;
+}
+
+.blueBox .linkText span.white {
 	color: #fff;
 	margin-left: 50px;
 }
+.yellowOchreBox .linkText span.white {
+	color: #fff;
+}
 .natural {
 	margin-left: 10px;
+}
+.renewable {
+	margin-left: 44px;
+}
+.green {
+	margin-left: 29px;
+}
+.efficient {
+	margin-left: 11px;
+}
+.arrow {
+	position: absolute;
+	float: right;
+	right: 0;
+	top: 10px;
+	width: 25px;
+	height: 39px;
+}
+.blueArrow {
+	background:url(../images/arrow_blue.png) no-repeat;
+	right: -25px;
+	top: 115px;
+}
+.ochreArrow {
+	background:url(../images/arrow_ochre.png) no-repeat;
+	left: -24px;
+	top: 92px;
+}
+a.energyOpti:hover .yellowOchreBox .ochreArrow {
+	background:url(../images/arrow_white_left.png) no-repeat;
+}
+a.energyOpti:hover .yellowOchreBox .linkText span.white {
+	color: #666;
+}
+
+.flexible {
+	margin-left: 
+}
+.economical {
+	margin-left: 
+}
+.reliable {
+	margin-left: 
+}
+.middle {
+	width: 376px;
 }
