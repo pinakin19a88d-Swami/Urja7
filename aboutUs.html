@@ -6,28 +6,46 @@
 		<link rel="stylesheet" href="css/bootstrap.css"  type="text/css"/>
 		<link rel="stylesheet" href="css/animate.css">
 		<link rel="stylesheet" href="css/urjaStylesheet.css"  type="text/css"/>
-
-		<!-- <link rel="stylesheet" href="css/sideNavigation.css"  type="text/css"/>
-		<link rel="stylesheet" href="css/aboutUsStyle.css"  type="text/css"/>
-		<link rel="stylesheet" href="css/blogStyle.css"  type="text/css"/> -->
+		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+
 		<script type="text/javascript">
 			$(document).ready(function(){
 
-			  $("#aboutNav").click(function(){
-			    $("#bodyContent").load("ajax/aboutUsContent.html");
-			  });
-			  $("#blogNav").click(function(){
-			    $("#bodyContent").load("ajax/blogContent.html");
-			  });
+				$("#bodyContent").load("ajax/aboutUsContent.html");
 
-			  // ---------- Side Navigation Fuctions ----------
-			  $("#energySideNav").click(function(){
-			    $("#bodyContent").load("ajax/energyContent.html");
-			  });
-			  $("#energySideNav > a").click(function(){
-			    $("#bodyContent").load("ajax/energyContent.html");
-			  });
+				$("#aboutNav").click(function(){
+					$("#bodyContent").load("ajax/aboutUsContent.html");
+				});
+				$("#blogNav").click(function(){
+					$("#bodyContent").load("ajax/blogContent.html");
+				});
+
+				// ---------- Side Navigation Fuctions ----------
+				$("#energySideNav").click(function(){
+					$("#bodyContent").load("ajax/energyContent.html");
+				});
+				$("#energySideNav > a").click(function(){
+					$("#bodyContent").load("ajax/energyContent.html");
+				});
+				$("#pumpingSideNav").click(function(){
+					$("#bodyContent").load("ajax/pumpingContent.html");
+				});
+				$("#pumpingSideNav > a").click(function(){
+					$("#bodyContent").load("ajax/pumpingContent.html");
+				});
+				$("#optSideNav").click(function(){
+					$("#bodyContent").load("ajax/optContent.html");
+				});
+				$("#optSideNav > a").click(function(){
+					$("#bodyContent").load("ajax/optContent.html");
+				});
+				$("#productSideNav").click(function(){
+					$("#bodyContent").load("ajax/productContent.html");
+				});
+				$("#productSideNav > a").click(function(){
+					$("#bodyContent").load("ajax/productContent.html");
+				});
 			});
 		</script>
 	</head>
@@ -41,8 +59,8 @@
 		              <div class="container">
 		              	 <a href="#" class="companyLogo">Company Logo</a>   
 			                <ul class="nav">
-			                  <li class="active"><a href="#">Home</a></li>
-			                  <li><a id="aboutNav" href="#">About Us</a></li>
+			                  <li><a href="index.html">Home</a></li>
+			                  <li class="active"><a id="aboutNav" href="#">About Us</a></li>
 			                  <li><a href="#">Clean Energy</a></li>
 			                  <li><a href="#">Resource Base</a></li>
 			                  <li><a href="#">Careers</a></li>
@@ -55,7 +73,7 @@
 			</div><!-- header -->
 			<div class="container whiteBG positionRelative">
 				<div class="row">
-				
+				<div class="bgImage">
 					<div class="span1 sidenav">
 						<ul class="">
 							<li class="textVertical blueBG" id="energySideNav"><a href="#">Solar Energy</a></li>
@@ -71,18 +89,18 @@
 
 					<div class="span3 aside">
 						<ul class="nav nav-list">
-						    <li><a href="#">Households</a><span id="icon1"></span></li>
-						    <li><a href="#">Farmers &amp; Landowners</a><span id="icon2"></span></li>
-						    <li><a href="#">Communities</a><span id="icon3"></span></li>
-						    <li><a href="#">Businesses</a><span id="icon4"></span></li>
-						    <li><a href="#">Public Voluntary Sector</a><span id="icon5"></span></li>
+						    <li><a href="#"><span id="icon1"></span>Households</a></li>
+						    <li><a href="#"><span id="icon2"></span>Farmers &amp; Landowners</a></li>
+						    <li><a href="#"><span id="icon3"></span>Communities</a></li>
+						    <li><a href="#"><span id="icon4"></span>Businesses</a></li>
+						    <li><a href="#"><span id="icon5"></span>Public Voluntary Sector</a></li>
 						</ul>
 						<div class="urjaAdvantage">
-							<h2><a href="#"><h3>UrjaFuture</h3><h3>Advantage</h3></a><span id="icon6"></span></h2>
+							<h2><a href="#"><span id="icon6"></span><h3>UrjaFuture</h3><h3>Advantage</h3></a></h2>
 						</div>
 						<div class="asideFooter">
 							<div class="energyCon">
-								<h2><a href="#"><h3>Measure Your</h3><h3>Energy Consumption</h3></a><span id="icon7"></span></h2>
+								<h2><a href="#"><span id="icon7"></span><h3>Measure Your</h3><h3>Energy Consumption</h3></a></h2>
 							</div>
 							<ul class="nav nav-list footerList">
 								<li><a href="#">News on Projects</a></li>
@@ -93,8 +111,9 @@
 							</ul>
 						</div>
 					</div><!-- span3 -->
-
+				</div>
 				</div><!-- row -->
+
 			</div><!-- container -->
 			
 			<div class="footerWrapper">
@@ -136,7 +155,7 @@
 	          </div>	<!-- navbar -->
 			</div>
 	</div><!-- pageWrapper -->
-	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="js/jquery-1.11.0.min.js"></script>
 	<script src="js/bootstrap.js"></script>
 	</body>
 </html>
