@@ -1,5 +1,5 @@
 /* Reset Css */
-html, body, div, h1, h2, h3, h4, h5, h6, p, img, dl,
+html, body, div, a, h1, h2, h3, h4, h5, h6, p, img, dl,
   dt, dd, ol, ul, li, table, tr, td, form, object, embed,
   article, aside, canvas, command, details, fieldset,
   figcaption, figure, footer, group, header, hgroup, legend,
@@ -8,11 +8,15 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, img, dl,
   	margin: 0;
   	padding: 0;
   	border: 0;
+
+  	-webkit-transition: color 0.2s linear;
+		-moz-transition: color 0.2s linear;
+		-o-transition: color 0.2s linear;
+		-ms-transition: color 0.2s linear;
+		transition: color 0.2 linear;
 }
 /* ---------- Commmon styles ---------- */
 body {
-	/*background-color: #585858;*/
-	/*background-color: #888;*/
 	background-color: #d1d3d4;
 	font-family: 'Muli', sans-serif;
 	font-size: 14px;
@@ -27,6 +31,7 @@ body {
 	background: #fff;
 	width: 940px;
 	margin: 0 auto;
+	overflow: hidden;
 
 	-webkit-box-shadow: 0 0 8px rgba(35,31,32,.4); 
 	-o-box-shadow: 0 0 8px rgba(35,31,32,.4); 
@@ -40,7 +45,6 @@ body {
 /* ---------- Header starts ---------- */
 .header {
 	width: 940px;
-	/*height: 136px;*/
 	margin: 0 auto;
 	position: relative;
 	background-color: #ffffff;
@@ -109,14 +113,15 @@ body {
 
 .sidenav {
   min-height: 100px;
-  /*background: #999;*/
 }
 .sidenav ul {
   position: relative;
   list-style: none;
   padding-top: 50px;
   margin-left: -5px;
-  /*border: #c00 solid 1px;*/
+
+	-webkit-transition:width 1s linear 2s;
+	transition: width 1s linear 2s;
 }
 .sidenav ul > li {
   width: 150px;
@@ -127,7 +132,6 @@ body {
   padding-top: 7px;
   margin-left: -53px;
   margin-bottom: 117px;
-  /*border: #fff solid 1px;*/
 }
 .sidenav ul > li > a {
   color: #ffffff;
@@ -176,6 +180,26 @@ body {
 .orangeBG:before {
   left: 40px;
   border-color: #d08e2f transparent transparent transparent;
+}
+.blueBG,
+.greenBG,
+.khakiBG,
+.orangeBG {
+	-webkit-transition: background-color 0.2s linear;
+	-moz-transition: background-color 0.2s linear;
+	-o-transition: background-color 0.2s linear;
+	-ms-transition: background-color 0.2s linear;
+	transition: background-color 0.2 linear;
+}
+.blueBG:before,
+.greenBG:before,
+.khakiBG:before,
+.orangeBG:before {
+	-webkit-transition: border-color 0.2s linear;
+	-moz-transition: border-color 0.2s linear;
+	-o-transition: border-color 0.2s linear;
+	-ms-transition: border-color 0.2s linear;
+	transition: border-color 0.2 linear;
 }
 .blueBG:hover,
 .greenBG:hover,
@@ -243,8 +267,8 @@ body {
 .footerNavbar {
 	margin: 0 auto 0 0;
 }
-
 .footerNavbar-inner {
+	height: 136px;
 	border: none;
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
@@ -252,18 +276,24 @@ body {
 	background-image: none;
 	background-color: #333333;
 	box-shadow: 0 -5px 8px rgba(35, 31, 32, 0.67);
-}
 
+	/*For IE9*/
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#333333', GradientType=0);
+}
 .footerNavbar-inner .footerNav > li > a {
-	font-size: 12px;
+	display: inline-block;
+	font-size: 11px;
 	/*font-family: "Century Gothic";*/
-	color: #999999;
-	padding: 10px 20px 10px 0px;
+	letter-spacing: .2px;
+	line-height: 16px;
+	color: #666666;
+	padding: 4px 0 4px 0;
 	text-shadow: none;
 }
 
 .footerNavbar-inner .footerNav > li > a:hover {
 	color: #ff3333;
+	background-color: transparent;
 }
 
 .footerNavbar .footerNav > .active > a, 
@@ -279,8 +309,41 @@ body {
 
 .footerNavbar .footerNav {
 	float: left;
-	padding: 0 0 0 22px;
+	padding: 0 0 0 0;
+	margin: 20px 50px 0 35px;
+}
+.footerNav > li > a {
 	margin: 0 0 0 0;
+}
+address {
+	display: inline-block;
+	color: #666666;
+	font-size: 11px;
+	letter-spacing: .2px;
+	line-height: 18px;
+	margin: 20px 0 0 80px;
+	z-index: 20;
+}
+address > span {
+	color: #cccccc;
+	font-size: 14px;
+}
+.copyright {
+	height: 20px;
+	background-color: #2a2a2a;
+}
+.copyright > p {
+	display: inline-block;
+	font-size: 10px;
+	letter-spacing: .2px;
+	line-height: 16px;
+	color: #666666;
+	float: right;
+	margin: 2px 10px 0 0;
+}
+.copyright > p:first-child {
+	float: left;
+	margin: 2px 0 0 40px;
 }
 
 /* ---------- Aside Styling ---------- */
@@ -293,11 +356,6 @@ body {
 	background: #8c8c8c;
 	min-height: 310px;
 }
-/*.aside > ul > li > span {
-	display: block;
-	position: absolute;
-	margin: -28px 0 0 0;
-}*/
 .aside #icon1 {
 	background-image: url("../images/asideIcons/icon1.png");
 }
@@ -389,11 +447,6 @@ body {
 	padding: 0 0 0 0;
 	margin: -5px 0 0 80px;
 }
-/*.urjaAdvantage > h2 > span {
-	display: block;
-	position: absolute;
-	margin: 15px 0 0 10px;
-}*/
 #icon6 {
 	width: 57px;
 	height: 57px;
@@ -418,7 +471,7 @@ body {
 .asideFooter .energyCon {
 	height: 52px;
 	background-color: #7a7a7a;
-	/*box-shadow: 0 3px 3px rgba(35, 31, 32, 0.30);*/
+	box-shadow: 0 3px 3px rgba(35, 31, 32, 0.30);
 }
 
 
@@ -437,11 +490,6 @@ body {
 	padding: 0 0 0 0;
 	margin: -8px 0 0 60px;
 }
-/*.asideFooter .energyCon > h2 > span {
-	display: block;
-	position: absolute;
-	margin: 8px 0 0 15px;
-}*/
 #icon7 {
 	width: 37px;
 	height: 37px;
@@ -510,7 +558,6 @@ body {
 }
 .mainBody > #aboutPage > h2 {
 	font-size: 26px;
-	/*margin-top: 35px;*/
 
 	-webkit-animation-delay: 0.5s;
   	-moz-animation-delay: 0.5s;
@@ -601,7 +648,6 @@ body {
 	color: #669933;
 	text-transform: uppercase;
 	letter-spacing: .2px;
-	/*margin-top: 35px;*/
 
   	-webkit-animation-delay: 0.5s;
   	-moz-animation-delay: 0.5s;
@@ -640,10 +686,6 @@ body {
 }
 .blogImage1 {
 	display: inline-block;
-	/*width: 574px;
-	height: 431px;
-	background-image: url("../img/greenHouse.jpg");
-	background-repeat: no-repeat;*/
 	margin-top: 20px;
 
   	-webkit-animation-delay: 1.7s;
@@ -741,7 +783,6 @@ body {
 }
 .mainBody > #energyPage > h2 {
 	font-size: 26px;
-	/*margin-top: 35px;*/
 
 	-webkit-animation-delay: 0.5s;
   	-moz-animation-delay: 0.5s;
@@ -834,7 +875,6 @@ i {
 .greenBox, .solarPumpingImg  {
 	width: 224px;
 	background: #73ac41;
-	/*float: left;*/
 }
 .greenBox {
 	-webkit-box-shadow: 0 5px 3px rgba(35,31,32,.4); 

@@ -14,6 +14,7 @@
 
 				$("#bodyContent").load("ajax/aboutUsContent.html");
 
+				// ---------- Main Navigation AJAX Fuctions ----------
 				$("#aboutNav").click(function(){
 					$("#bodyContent").load("ajax/aboutUsContent.html");
 				});
@@ -21,7 +22,7 @@
 					$("#bodyContent").load("ajax/blogContent.html");
 				});
 
-				// ---------- Side Navigation Fuctions ----------
+				// ---------- Side Navigation AJAX Fuctions ----------
 				$("#energySideNav").click(function(){
 					$("#bodyContent").load("ajax/energyContent.html");
 				});
@@ -57,7 +58,7 @@
 				<div class="navbar navbar-static-top">
 		            <div class="navbar-inner">
 		              <div class="container">
-		              	 <a href="#" class="companyLogo">Company Logo</a>   
+		              	 <a href="#" class="animated fadeIn companyLogo">Company Logo</a>   
 			                <ul class="nav">
 			                  <li><a href="index.html">Home</a></li>
 			                  <li class="active"><a id="aboutNav" href="#">About Us</a></li>
@@ -75,7 +76,7 @@
 				<div class="row">
 				<div class="bgImage">
 					<div class="span1 sidenav">
-						<ul class="">
+						<ul class="animated fadeInLeft">
 							<li class="textVertical blueBG" id="energySideNav"><a href="#">Solar Energy</a></li>
 							<li class="textVertical greenBG" id="pumpingSideNav"><a href="#">Solar Pumping</a></li>
 							<li class="textVertical khakiBG" id="optSideNav"><a href="#">Energy Optimisation</a></li>
@@ -138,21 +139,35 @@
 						<li><a href="#">Consultancy</a></li>
 					</ul>
 				</div>
-					<div class="navbar navbar-static-bottom footerNavbar">
-	            <div class="navbar-inner footerNavbar-inner">
-	              <div class="container">
-	              	  <ul class="nav footerNav">
-		                  <li><a href="#">Home</a></li>
-		                  <li class="active"><a href="#">About Us</a></li>
-		                  <li><a href="#">Clean Energy</a></li>
-		                  <li><a href="#">Resource Base</a></li>
-		                  <li><a href="#">Careers</a></li>
-		                  <li><a href="#">Contact</a></li>
-		                  <li><a href="#">Blog</a></li>
-		                </ul>
-	              </div> <!-- container -->
-	            </div> <!-- navbar-inner -->
-	          </div>	<!-- navbar -->
+				<div class="navbar-static-bottom footerNavbar">
+		            <div class="navbar-inner footerNavbar-inner">
+						<div class="container">
+							<ul class="nav nav-list footerNav">
+								<li><a href="#">Home</a></li>
+								<li class="active"><a href="#">About Us</a></li>
+								<li><a href="#">Clean Energy</a></li>
+								<li><a href="#">Resource Base</a></li>
+							</ul>
+							<ul class="nav nav-list footerNav">
+								<li><a href="#">Careers</a></li>
+								<li><a href="#">Contact</a></li>
+								<li><a href="#">Blog</a></li>
+							</ul>
+							<address>
+								<span>Urjafuture Systems (I) Pvt Ltd</span>
+								<br/>Modi baug, Ganeshkhind Road, Shivajinagar,
+								<br/>Pune 411 002
+								<br/>Telefax: +91 20-24475025 / 24430051, 
+								<br/>Mobile: 9665042105, 
+								<br/>E-mail:<a href="mailto:sales@urjafuture.im">sales@urjafuture.in</a>, Website:<a href="http://www.urjafuture.in">www.urjafuture.in</a>
+							</address>
+						</div> <!-- container -->
+		            </div> <!-- footerNavbar-inner -->
+		            <div class="copyright">
+		          		<p>All rights Reserved by Urja Future_2014</p>
+		          		<p>Web Site Developed by - <a href="http://inspiremultimedia.co.in">Inspiremultimedia.co.in</a></p>
+	          		</div>
+	          	</div>	<!-- footerNavbar -->
 			</div>
 	</div><!-- pageWrapper -->
 	<script src="js/jquery-1.11.0.min.js"></script>
