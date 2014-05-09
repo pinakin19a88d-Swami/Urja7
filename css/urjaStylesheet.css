@@ -73,7 +73,6 @@ body {
 	background-color: #ffffff;
 	box-shadow: none;
 }
-
 .navbar-inner .nav > li > a {
 	font-size: 12px;
 	/*font-family: "Century Gothic";*/
@@ -81,21 +80,21 @@ body {
 	text-shadow: none;
 }
 
-.navbar-inner .nav > .blogIcon {
-	width: 70px;
-	background-image: url("../images/writingIcon.png");
-	background-repeat: no-repeat;
-	background-position: center right;
+#blogIcon {
+	display: inline-block;
+	width: 34px;
+	height: 39px;
+	background: url("../images/Urja_sprite.png") -110px 0 no-repeat;
+	margin: -30px 0 -10px 10px;
 }
-
-.navbar-inner .nav > .blogIcon:hover {
-	background-image: url("../images/writingIconRollover.png");
+#blogIcon:hover,
+#blogNav:hover #blogIcon {
+	background: url("../images/Urja_sprite.png") -110px -50px no-repeat;
 }
 
 .navbar-inner .nav > li > a:hover {
 	color: #ff3333;
 }
-
 .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
 	color: #ff3333;
 	background-color: #ffffff;
@@ -328,6 +327,28 @@ address > span {
 	color: #cccccc;
 	font-size: 14px;
 }
+.socialSprites {
+	display: inline-block;
+	margin: 0 0 0 60px;
+	z-index: 40;
+}
+.socialSprites > a > i {
+	display: inline-block;
+	width: 27px;
+	height: 27px;
+}
+.socialSprites > a > .facebook {
+	background: url("../images/Urja_sprite.png") -81px 0px no-repeat;
+}
+.socialSprites > a > .twitter {
+	background: url("../images/Urja_sprite.png") -81px -30px no-repeat;
+}
+.socialSprites > a > .googlePlus {
+	background: url("../images/Urja_sprite.png") -81px -60px no-repeat;
+}
+.socialSprites > a > .linkedIn {
+	background: url("../images/Urja_sprite.png") -81px -90px no-repeat;
+}
 .copyright {
 	height: 20px;
 	background-color: #2a2a2a;
@@ -357,47 +378,45 @@ address > span {
 	min-height: 310px;
 }
 .aside #icon1 {
-	background-image: url("../images/asideIcons/icon1.png");
+	background: url("../images/Urja_sprite.png") 0 -14px no-repeat;
 }
 .aside .nav > li > a:hover > #icon1 {
-	background-image: url("../images/asideIcons/icon1Rollover.png");
+	background: url("../images/Urja_sprite.png") -40px -14px no-repeat;
 }
 
 .aside #icon2 {
-	background-image: url("../images/asideIcons/icon2.png");
+	background: url("../images/Urja_sprite.png") 0 -54px no-repeat;
 }
 .aside .nav > li > a:hover > #icon2 {
-	background-image: url("../images/asideIcons/icon2Rollover.png");
+	background: url("../images/Urja_sprite.png") -40px -54px no-repeat;
 }
 
 .aside #icon3 {
-	background-image: url("../images/asideIcons/icon3.png");
+	background: url("../images/Urja_sprite.png") 0 -95px no-repeat;
 }
 .aside .nav > li > a:hover > #icon3 {
-	background-image: url("../images/asideIcons/icon3Rollover.png");
+	background: url("../images/Urja_sprite.png") -40px -95px no-repeat;
 }
 
 .aside #icon4 {
-	background-image: url("../images/asideIcons/icon4.png");
+	background: url("../images/Urja_sprite.png") 0 -136px no-repeat;
 }
 .aside .nav > li > a:hover > #icon4 {
-	background-image: url("../images/asideIcons/icon4Rollover.png");
+	background: url("../images/Urja_sprite.png") -40px -136px no-repeat;
 }
 
 .aside #icon5 {
-	background-image: url("../images/asideIcons/icon5.png");
+	background: url("../images/Urja_sprite.png") 0 -177px no-repeat;
 }
 .aside .nav > li > a:hover > #icon5 {
-	background-image: url("../images/asideIcons/icon5Rollover.png");
+	background: url("../images/Urja_sprite.png") -40px -177px no-repeat;
 }
 
 #icon1, #icon2, #icon3, #icon4, #icon5 {
-	display: block;
-	position: absolute;
-	margin: -10px 0px 0 -47px;
+	display: inline-block;
+	margin: -10px 12px -12px -47px;
 	width: 36px;
 	height: 36px;
-	background-repeat: no-repeat;
 }
 
 .aside .nav {
@@ -432,7 +451,7 @@ address > span {
 .urjaAdvantage > h2 > a {
 	position: absolute;
 	text-decoration: none;
-	margin: 15px 0 0 0;
+	margin: -20px 0 0 0;
 }
 .urjaAdvantage > h2 > a > h3 {
 	height: 25px;
@@ -450,17 +469,14 @@ address > span {
 #icon6 {
 	width: 57px;
 	height: 57px;
-	display: block;
-	position: absolute;
-	margin: -3px 0 0 10px;
-	background-repeat: no-repeat;
+	display: inline-block;
+	margin: 0 0 -60px 12px;
 }
 .urjaAdvantage #icon6 {
-	background-image: url("../images/asideIcons/icon6.png");
-	background-repeat: no-repeat;
+	background: url("../images/Urja_sprite.png") 0 -261px no-repeat;
 }
 .urjaAdvantage > h2 > a:hover > #icon6 {
-	background-image: url("../images/asideIcons/icon6Rollover.png");
+	background: url("../images/Urja_sprite.png") -60px -261px no-repeat;
 }
 
 .asideFooter {
@@ -478,7 +494,7 @@ address > span {
 .asideFooter .energyCon > h2 > a {
 	position: absolute;
 	text-decoration: none;
-	margin: 5px 0 0 0;
+	margin: -32px 0 0 5px;
 }
 .asideFooter .energyCon > h2 > a > h3 {
 	height: 25px;
@@ -493,17 +509,14 @@ address > span {
 #icon7 {
 	width: 37px;
 	height: 37px;
-	display: block;
-	position: absolute;
-	margin: 3px 0 0 15px;
-	background-repeat: no-repeat;
+	display: inline-block;
+	margin: 3px 0 -47px 15px;
 }
 .asideFooter .energyCon #icon7 {
-	background-image: url("../images/asideIcons/icon7.png");
-	background-repeat: no-repeat;
+	background: url("../images/Urja_sprite.png") 0 -219px no-repeat;
 }
 .asideFooter .energyCon > h2 > a:hover > #icon7 {
-	background-image: url("../images/asideIcons/icon7Rollover.png");
+	background: url("../images/Urja_sprite.png") -40px -219px no-repeat;
 }
 .asideFooter .nav {
 	margin: 10px 0 0 0;
@@ -785,11 +798,12 @@ address > span {
 	font-size: 26px;
 
 	-webkit-animation-delay: 0.5s;
-  	-moz-animation-delay: 0.5s;
-  	-o-animation-delay: 0.5s;
-  	animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  -o-animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
-i {
+#bp1 > i,
+#bp2 > i {
 	display: inline-block;
 	width: 11px;
 	height: 11px;
@@ -798,42 +812,42 @@ i {
 }
 #bp1 {
 	-webkit-animation-delay: 1.2s;
-  	-moz-animation-delay: 1.2s;
-  	-o-animation-delay: 1.2s;
-  	animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
+  -o-animation-delay: 1.2s;
+  animation-delay: 1.2s;
 }
 #bp2 {
 	-webkit-animation-delay: 1.6s;
-  	-moz-animation-delay: 1.6s;
-  	-o-animation-delay: 1.6s;
-  	animation-delay: 1.6s;
+  -moz-animation-delay: 1.6s;
+  -o-animation-delay: 1.6s;
+  animation-delay: 1.6s;
 }
 #bp3 {
 	-webkit-animation-delay: 2.2s;
-  	-moz-animation-delay: 2.2s;
-  	-o-animation-delay: 2.2s;
-  	animation-delay: 2.2s;
+  -moz-animation-delay: 2.2s;
+  -o-animation-delay: 2.2s;
+  animation-delay: 2.2s;
 }
 #energyPara1 {
 	-webkit-animation-delay: 1s;
-  	-moz-animation-delay: 1s;
-  	-o-animation-delay: 1s;
-  	animation-delay: 1s;
-  	margin: 0 0 10px 0;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
+  margin: 0 0 10px 0;
 }
 #energyPara2 {
 	-webkit-animation-delay: 1.4s;
-  	-moz-animation-delay: 1.4s;
-  	-o-animation-delay: 1.4s;
-  	animation-delay: 1.4s;
-  	margin: 0 0 10px 0;
+	-moz-animation-delay: 1.4s;
+	-o-animation-delay: 1.4s;
+	animation-delay: 1.4s;
+	margin: 0 0 10px 0;
 }
 #energyPara3 {
 	-webkit-animation-delay: 2s;
-  	-moz-animation-delay: 2s;
-  	-o-animation-delay: 2s;
-  	animation-delay: 2s;
-  	margin: 0 0 10px 0;
+	-moz-animation-delay: 2s;
+	-o-animation-delay: 2s;
+	animation-delay: 2s;
+	margin: 0 0 10px 0;
 }
 .mainBody > #energyPage > p,
 #energyPage > .bulletPts > ul > li > p {
@@ -845,7 +859,7 @@ i {
 	letter-spacing: .2px;
 	line-height: 16px;
 	color: #666666;
-  	margin: 0 0 10px 0;
+  margin: 0 0 10px 0;
 }
 
 .sliderWrapper {
