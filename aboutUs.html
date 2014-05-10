@@ -15,37 +15,49 @@
 				$("#bodyContent").load("ajax/aboutUsContent.html");
 
 				// ---------- Main Navigation AJAX Fuctions ----------
-				$("#aboutNav").click(function(){
+				$("#aboutNav, #aboutFtNav").click(function(){
 					$("#bodyContent").load("ajax/aboutUsContent.html");
+					$("ul > li").removeClass("active");
+					$("#aboutNav, #aboutFtNav").parent().addClass("active");
 				});
-				$("#blogNav").click(function(){
+				$("#blogNav, #blogFtNav").click(function(){
 					$("#bodyContent").load("ajax/blogContent.html");
+					$("ul > li").removeClass("active");
+					$("#blogNav, #blogFtNav").parent().addClass("active");
 				});
 
 				// ---------- Side Navigation AJAX Fuctions ----------
 				$("#energySideNav").click(function(){
 					$("#bodyContent").load("ajax/energyContent.html");
+					$("ul > li").removeClass("active");
 				});
 				$("#energySideNav > a").click(function(){
 					$("#bodyContent").load("ajax/energyContent.html");
+					$("ul > li").removeClass("active");
 				});
 				$("#pumpingSideNav").click(function(){
 					$("#bodyContent").load("ajax/pumpingContent.html");
+					$("ul > li").removeClass("active");
 				});
 				$("#pumpingSideNav > a").click(function(){
 					$("#bodyContent").load("ajax/pumpingContent.html");
+					$("ul > li").removeClass("active");
 				});
 				$("#optSideNav").click(function(){
 					$("#bodyContent").load("ajax/optContent.html");
+					$("ul > li").removeClass("active");
 				});
 				$("#optSideNav > a").click(function(){
 					$("#bodyContent").load("ajax/optContent.html");
+					$("ul > li").removeClass("active");
 				});
 				$("#productSideNav").click(function(){
 					$("#bodyContent").load("ajax/productContent.html");
+					$("ul > li").removeClass("active");
 				});
 				$("#productSideNav > a").click(function(){
 					$("#bodyContent").load("ajax/productContent.html");
+					$("ul > li").removeClass("active");
 				});
 			});
 		</script>
@@ -58,16 +70,30 @@
 				<div class="navbar navbar-static-top">
 		            <div class="navbar-inner">
 		              <div class="container">
-		              	 <a href="#" class="animated fadeIn companyLogo">Company Logo</a>   
-			                <ul class="nav">
-			                  <li><a href="index.html">Home</a></li>
-			                  <li class="active"><a id="aboutNav" href="#">About Us</a></li>
-			                  <li><a href="#">Clean Energy</a></li>
-			                  <li><a href="#">Resource Base</a></li>
-			                  <li><a href="#">Careers</a></li>
-			                  <li><a href="#">Contact</a></li>
-			                  <li><a id="blogNav" href="#">Blog<i id="blogIcon"></i></a></li>
-			                </ul>
+		              	<a href="#" class="animated fadeIn companyLogo">Company Logo</a>   
+		                <ul class="nav">
+		                  <li><a href="index.html">Home</a></li>
+		                  <li class="active"><a id="aboutNav" href="#">About Us</a>
+		                  	<ul class="subNav">
+		                  		<li><a href="">Certification</a></li>
+		                  	</ul>
+		                  </li>
+		                  <li><a href="#">Clean Energy</a>
+		                  	<ul class="subNav">
+		                  		<li><a href="">Solar Energy</a></li>
+		                  		<li><a href="">Solar Pumping</a></li>
+		                  		<li><a href="">Energy Optimization</a></li>
+		                  	</ul>
+		                  </li>
+		                  <li><a href="#">Resource Base</a></li>
+		                  <li><a href="#">Careers</a></li>
+		                  <li><a href="#">Contact</a>
+		                  	<ul class="subNav">
+		                  		<li><a href="">Network Coverage</a></li>
+		                  	</ul>
+		                  </li>
+		                  <li><a id="blogNav" href="#">Blog<i id="blogIcon"></i></a></li>
+		                </ul>
 		              </div> <!-- container -->
 		            </div> <!-- navbar-inner -->
 	          	</div>	<!-- navbar -->			
@@ -144,14 +170,14 @@
 						<div class="container">
 							<ul class="nav nav-list footerNav">
 								<li><a href="#">Home</a></li>
-								<li class="active"><a href="#">About Us</a></li>
+								<li class="active"><a id="aboutFtNav" href="#">About Us</a></li>
 								<li><a href="#">Clean Energy</a></li>
 								<li><a href="#">Resource Base</a></li>
 							</ul>
 							<ul class="nav nav-list footerNav">
 								<li><a href="#">Careers</a></li>
 								<li><a href="#">Contact</a></li>
-								<li><a href="#">Blog</a></li>
+								<li><a id="blogFtNav" href="#">Blog</a></li>
 							</ul>
 							<address>
 								<span>Urjafuture Systems (I) Pvt Ltd</span>

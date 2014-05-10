@@ -79,7 +79,25 @@ body {
 	padding: 30px 20px 10px 0px;
 	text-shadow: none;
 }
-
+.nav > li > .subNav {
+	position: absolute;
+  list-style: none;
+  font-size: 12px;
+  background-color: #d6d6d6;
+  padding: 5px 10px 5px 10px;
+  margin: 0 0 0 -10px;
+  display: none;
+}
+.nav > li:hover > ul {
+	display: block;
+}
+.subNav > li > a {
+	color: #666666;
+	text-decoration: none;
+}
+.subNav > li > a:hover {
+	color: #ff3333;
+}
 #blogIcon {
 	display: inline-block;
 	width: 34px;
