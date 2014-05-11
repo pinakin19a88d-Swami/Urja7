@@ -37,13 +37,13 @@ $(document).ready(function(){
 		$("#bodyContent").load("ajax/optContent.html");
 		$("ul > li").removeClass("active");
 	});
-	$("#productSideNav").click(function(){
+	$("#productSideNav, #productSideNav > a").click(function(){
 		$("#bodyContent").load("ajax/productContent.html");
 		$("ul > li").removeClass("active");
 	});
-	$("#productSideNav > a").click(function(){
-		$("#bodyContent").load("ajax/productContent.html");
-		$("ul > li").removeClass("active");
-	});
+	// $("#productSideNav > a").click(function(){
+	// 	$("#bodyContent").load("ajax/productContent.html");
+	// 	$("ul > li").removeClass("active");
+	// });
 			  
 });
