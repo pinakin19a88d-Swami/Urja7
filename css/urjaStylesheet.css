@@ -597,7 +597,7 @@ address > span {
 
 #icon1, #icon2, #icon3, #icon4, #icon5 {
 	display: inline-block;
-	margin: -10px 12px -12px -47px;
+	margin: 0 12px -12px 0;
 	width: 36px;
 	height: 36px;
 }
@@ -618,8 +618,10 @@ address > span {
 	line-height: 16px;
 	color: #fff;
 	text-shadow: none;
-	padding: 0 0 0 0;
-	margin: 10px 0 0 46px;
+	padding: 0;
+	/*margin: 10px 0 0 0;*/
+	margin: 0;
+	height: 36px;
 }
 .aside .nav > li > a:hover, 
 .aside .nav > li > a:focus {
