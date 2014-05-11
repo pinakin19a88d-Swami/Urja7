@@ -715,8 +715,6 @@ address > span {
 	text-decoration: underline;
 }
 
-/* ----------------------------------- */
-
 /* ---------- About Us Styling ---------- */
 
 #aboutPage > .aboutUsBanner{
@@ -995,6 +993,70 @@ address > span {
   margin: 0 0 10px 0;
 }
 
+/* --------- Pumping Styling ---------- */
+
+#pumpingPage > .pumpingBanner{
+	width: 571px;
+	height: 200px;
+	margin: 10px 0 10px 0;
+}
+#pumpingPage > .blueHeading {
+	font-weight: bold;
+	font-size: 14px;
+	color: #2995dc;
+	text-transform: uppercase;
+	letter-spacing: .2px;
+}
+#pumpingPage > .redHeading {
+	font-weight: bold;
+	font-size: 14px;
+	color: #ff3333;
+	text-transform: uppercase;
+	letter-spacing: .2px;
+	margin: 0 0 10px 0;
+}
+.mainBody {
+	/*font-family: "Century Gothic";*/
+	overflow: hidden;
+}
+.mainBody > #pumpingPage > h2 {
+	font-weight: bold;
+	font-size: 26px;
+	color: #669933;
+	text-transform: uppercase;
+	letter-spacing: .2px; 
+}
+#bp1 > i,
+#bp2 > i {
+	display: inline-block;
+	width: 11px;
+	height: 11px;
+	background: url("../images/Urja_sprite.png") 0 0 no-repeat;
+	margin: 2px 5px 0 0;
+}
+#pumpingPara1 {
+  margin: 0 0 10px 0;
+}
+#pumpingPara2 {
+	margin: 0 0 10px 0;
+}
+#pumpingPara3 {
+	margin: 0 0 10px 0;
+}
+.mainBody > #pumpingPage > p,
+#pumpingPage > .bulletPts > ul > li > p {
+	width: 571px;
+	/*font-family: "Century Gothic";*/
+	font-size: 12px;
+	font-weight: normal;
+	text-align: justify;
+	letter-spacing: .2px;
+	line-height: 16px;
+	color: #666666;
+  margin: 0 0 10px 0;
+}
+
+/* ---------- Home Page Styling ---------- */
 .sliderWrapper {
 	float: left;
 	width: 340px;
