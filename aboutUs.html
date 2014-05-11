@@ -6,59 +6,16 @@
 		<link rel="stylesheet" href="css/bootstrap.css"  type="text/css"/>
 		<link rel="stylesheet" href="css/animate.css">
 		<link rel="stylesheet" href="css/urjaStylesheet.css"  type="text/css"/>
-		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	
 		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="js/custom_Frontend.js"></script>
 
 		<script type="text/javascript">
 			$(document).ready(function(){
 
 				$("#bodyContent").load("ajax/aboutUsContent.html");
 
-				// ---------- Main Navigation AJAX Fuctions ----------
-				$("#aboutNav, #aboutFtNav").click(function(){
-					$("#bodyContent").load("ajax/aboutUsContent.html");
-					$("ul > li").removeClass("active");
-					$("#aboutNav, #aboutFtNav").parent().addClass("active");
-				});
-				$("#blogNav, #blogFtNav").click(function(){
-					$("#bodyContent").load("ajax/blogContent.html");
-					$("ul > li").removeClass("active");
-					$("#blogNav, #blogFtNav").parent().addClass("active");
-				});
-
-				// ---------- Side Navigation AJAX Fuctions ----------
-				$("#energySideNav").click(function(){
-					$("#bodyContent").load("ajax/energyContent.html");
-					$("ul > li").removeClass("active");
-				});
-				$("#energySideNav > a").click(function(){
-					$("#bodyContent").load("ajax/energyContent.html");
-					$("ul > li").removeClass("active");
-				});
-				$("#pumpingSideNav").click(function(){
-					$("#bodyContent").load("ajax/pumpingContent.html");
-					$("ul > li").removeClass("active");
-				});
-				$("#pumpingSideNav > a").click(function(){
-					$("#bodyContent").load("ajax/pumpingContent.html");
-					$("ul > li").removeClass("active");
-				});
-				$("#optSideNav").click(function(){
-					$("#bodyContent").load("ajax/optContent.html");
-					$("ul > li").removeClass("active");
-				});
-				$("#optSideNav > a").click(function(){
-					$("#bodyContent").load("ajax/optContent.html");
-					$("ul > li").removeClass("active");
-				});
-				$("#productSideNav").click(function(){
-					$("#bodyContent").load("ajax/productContent.html");
-					$("ul > li").removeClass("active");
-				});
-				$("#productSideNav > a").click(function(){
-					$("#bodyContent").load("ajax/productContent.html");
-					$("ul > li").removeClass("active");
-				});
+				
 			});
 		</script>
 	</head>
