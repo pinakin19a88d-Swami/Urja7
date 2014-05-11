@@ -45,5 +45,10 @@ $(document).ready(function(){
 	// 	$("#bodyContent").load("ajax/productContent.html");
 	// 	$("ul > li").removeClass("active");
 	// });
+
+	$(".iconBtn a").click(function(){
+		$("#bodyContent").load("ajax/household.html");
+		$("ul > li").removeClass("active");
+	});
 			  
 });
