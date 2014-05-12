@@ -938,12 +938,15 @@ address > span {
 
 /* --------- Energy Styling ---------- */
 
-#energyPage > .energyBanner{
+#energyPage > .energyBanner, .userBar .energyBanner{
 	width: 571px;
 	height: 200px;
 	margin: 10px 0 10px 0;
 }
-#energyPage > .blueHeading {
+.userBar h2 {
+	font-size: 26px;
+}
+#energyPage > .blueHeading, .userBar .blueHeading {
 	font-weight: bold;
 	font-size: 14px;
 	color: #2995dc;
