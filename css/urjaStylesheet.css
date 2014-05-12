@@ -9,11 +9,11 @@ html, body, div, a, h1, h2, h3, h4, h5, h6, p, img, dl,
   	padding: 0;
   	border: 0;
 
-  	/*-webkit-transition: color 0.2s linear;
+  	-webkit-transition: color 0.2s linear;
 		-moz-transition: color 0.2s linear;
 		-o-transition: color 0.2s linear;
 		-ms-transition: color 0.2s linear;
-		transition: color 0.2 linear;*/
+		transition: color 0.2 linear;
 }
 /* ---------- Commmon styles ---------- */
 body {
@@ -1018,7 +1018,6 @@ address > span {
 	margin: 0 0 10px 0;
 }
 .mainBody {
-	/*font-family: "Century Gothic";*/
 	overflow: hidden;
 }
 .mainBody > #pumpingPage > h2 {
@@ -1048,7 +1047,6 @@ address > span {
 .mainBody > #pumpingPage > p,
 #pumpingPage > .bulletPts > ul > li > p {
 	width: 571px;
-	/*font-family: "Century Gothic";*/
 	font-size: 12px;
 	font-weight: normal;
 	text-align: justify;
