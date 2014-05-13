@@ -184,6 +184,70 @@ i.bullet {
 									}																																				
 
 .de2s { -webkit-animation-delay: 2s; }
+
+.de21ms {  -webkit-animation-delay: 2.1s;
+							 -moz-animation-delay: 2.1s;
+								-ms-animation-delay: 2.1s;
+								 -o-animation-delay: 2.1s;
+										animation-delay: 2.1s; 
+									}
+
+.de22ms {  -webkit-animation-delay: 2.2s;
+							 -moz-animation-delay: 2.2s;
+								-ms-animation-delay: 2.2s;
+								 -o-animation-delay: 2.2s;
+										animation-delay: 2.2s; 
+									}
+
+.de23ms {  -webkit-animation-delay: 2.3s;
+							 -moz-animation-delay: 2.3s;
+								-ms-animation-delay: 2.3s;
+								 -o-animation-delay: 2.3s;
+										animation-delay: 2.3s; 
+									}
+
+.de24ms {  -webkit-animation-delay: 2.4s;
+							 -moz-animation-delay: 2.4s;
+								-ms-animation-delay: 2.4s;
+								 -o-animation-delay: 2.4s;
+										animation-delay: 2.4s; 
+									}
+
+.de25ms {  -webkit-animation-delay: 2.5s;
+							 -moz-animation-delay: 2.5s;
+								-ms-animation-delay: 2.5s;
+								 -o-animation-delay: 2.5s;
+										animation-delay: 2.5s; 
+									}
+
+.de26ms {  -webkit-animation-delay: 2.6s;
+							 -moz-animation-delay: 2.6s;
+								-ms-animation-delay: 2.6s;
+								 -o-animation-delay: 2.6s;
+										animation-delay: 2.6s; 
+									}
+
+.de27ms {  -webkit-animation-delay: 2.7s;
+							 -moz-animation-delay: 2.7s;
+								-ms-animation-delay: 2.7s;
+								 -o-animation-delay: 2.7s;
+										animation-delay: 2.7s; 
+									}
+
+.de28ms {  -webkit-animation-delay: 2.8s;
+							 -moz-animation-delay: 2.8s;
+								-ms-animation-delay: 2.8s;
+								 -o-animation-delay: 2.8s;
+										animation-delay: 2.8s; 
+									}
+
+.de29ms {  -webkit-animation-delay: 2.9s;
+							 -moz-animation-delay: 2.9s;
+								-ms-animation-delay: 2.9s;
+								 -o-animation-delay: 2.9s;
+										animation-delay: 2.9s; 
+									}
+
 .de3s { -webkit-animation-delay: 3s; }
 .de4s { -webkit-animation-delay: 4s; }
 .de5s { -webkit-animation-delay: 5s; }
@@ -715,6 +779,64 @@ address > span {
 }
 .asideFooter .nav > li > a:hover, .asideFooter .nav > li > a:focus {
 	text-decoration: underline;
+}
+
+/* --------- Household Styling ---------- */
+
+#householdPage > .householdBanner{
+	width: 571px;
+	height: 200px;
+	margin: 10px 0 10px 0;
+}
+#householdPage > .blueHeading {
+	font-weight: bold;
+	font-size: 16px;
+	color: #2995dc;
+	text-transform: uppercase;
+	letter-spacing: .2px;
+}
+.mainBody > #householdPage > h2 {
+	font-size: 26px;
+}
+#householdPara {
+  margin: 0 0 10px 0;
+}
+.mainBody > #householdPage > p {
+	width: 571px;
+	font-size: 12px;
+	font-weight: normal;
+	text-align: justify;
+	letter-spacing: .2px;
+	line-height: 16px;
+	color: #666666;
+  margin: 0 0 10px 0;
+}
+.thumbs {
+	width: 571px;
+	height: 135px;
+	margin: 40px 0 0 0;
+}
+.thumbs > ul > li {
+	float: left;
+}
+.thumbsList {
+	width: 571px;
+	height: 135px;
+	list-style: none;
+}
+.thumbsList > li {
+	margin: 0 0 0 5px;
+}
+.thumbsList > li:first-child {
+	margin: 0 0 0 0;
+}
+.thumbsList > li > p {
+	font-size: 14px;
+	font-weight: normal;
+	letter-spacing: .2px;
+	line-height: 16px;
+	text-align: center;
+	margin: 10px 0 0 0;
 }
 
 /* ---------- About Us Styling ---------- */
