@@ -13,27 +13,15 @@ $(document).ready(function(){
 	});
 
 	// ---------- Side Navigation AJAX Fuctions ----------
-	$("#energySideNav").click(function(){
+	$("#energySideNav, #energySideNav > a").click(function(){
 		$("#bodyContent").load("ajax/energyContent.html");
 		$("ul > li").removeClass("active");
 	});
-	$("#energySideNav > a").click(function(){
-		$("#bodyContent").load("ajax/energyContent.html");
-		$("ul > li").removeClass("active");
-	});
-	$("#pumpingSideNav").click(function(){
+	$("#pumpingSideNav, #pumpingSideNav > a").click(function(){
 		$("#bodyContent").load("ajax/pumpingContent.html");
 		$("ul > li").removeClass("active");
 	});
-	$("#pumpingSideNav > a").click(function(){
-		$("#bodyContent").load("ajax/pumpingContent.html");
-		$("ul > li").removeClass("active");
-	});
-	$("#optSideNav").click(function(){
-		$("#bodyContent").load("ajax/optContent.html");
-		$("ul > li").removeClass("active");
-	});
-	$("#optSideNav > a").click(function(){
+	$("#optSideNav, #optSideNav > a").click(function(){
 		$("#bodyContent").load("ajax/optContent.html");
 		$("ul > li").removeClass("active");
 	});
@@ -41,13 +29,14 @@ $(document).ready(function(){
 		$("#bodyContent").load("ajax/productContent.html");
 		$("ul > li").removeClass("active");
 	});
-	// $("#productSideNav > a").click(function(){
-	// 	$("#bodyContent").load("ajax/productContent.html");
-	// 	$("ul > li").removeClass("active");
-	// });
-
-	$(".iconBtn a").click(function(){
+	
+	// ---------- Aside Navigation AJAX Fuctions ----------
+	$("#aside1").click(function(){
 		$("#bodyContent").load("ajax/household.html");
+		$("ul > li").removeClass("active");
+	});
+	$("#aside2").click(function(){
+		$("#bodyContent").load("ajax/farmers.html");
 		$("ul > li").removeClass("active");
 	});
 			  

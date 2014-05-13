@@ -839,6 +839,64 @@ address > span {
 	margin: 10px 0 0 0;
 }
 
+/* --------- farmers Styling ---------- */
+
+#farmersPage > .farmersBanner{
+	width: 571px;
+	height: 200px;
+	margin: 10px 0 10px 0;
+}
+#farmersPage > .blueHeading {
+	font-weight: bold;
+	font-size: 16px;
+	color: #2995dc;
+	text-transform: uppercase;
+	letter-spacing: .2px;
+}
+.mainBody > #farmersPage > h2 {
+	font-size: 26px;
+}
+#farmersPara {
+  margin: 0 0 10px 0;
+}
+.mainBody > #farmersPage > p {
+	width: 571px;
+	font-size: 12px;
+	font-weight: normal;
+	text-align: justify;
+	letter-spacing: .2px;
+	line-height: 16px;
+	color: #666666;
+  margin: 0 0 10px 0;
+}
+.thumbs {
+	width: 571px;
+	height: 135px;
+	margin: 40px 0 0 0;
+}
+.thumbs > ul > li {
+	float: left;
+}
+.thumbsList {
+	width: 571px;
+	height: 135px;
+	list-style: none;
+}
+.thumbsList > li {
+	margin: 0 0 0 5px;
+}
+.thumbsList > li:first-child {
+	margin: 0 0 0 0;
+}
+.thumbsList > li > p {
+	font-size: 14px;
+	font-weight: normal;
+	letter-spacing: .2px;
+	line-height: 16px;
+	text-align: center;
+	margin: 10px 0 0 0;
+}
+
 /* ---------- About Us Styling ---------- */
 
 #aboutPage > .aboutUsBanner{
