@@ -731,7 +731,7 @@ address > span {
 .asideFooter {
 	background-color: #666666;
 	min-height: 630px;
-	box-shadow: -5px 0 4px rgba(35, 31, 32, 0.34);
+	/*box-shadow: -5px 0 4px rgba(35, 31, 32, 0.34);*/
 }
 .asideFooter .energyCon {
 	height: 52px;
