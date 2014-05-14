@@ -48,7 +48,9 @@ i.bullet {
 	margin: 2px 0 0 0;
 	background: url("../images/Urja_sprite.png") 0 0 no-repeat;
 }
-
+.tstImg {
+	background: url(../images/grey_imgBG.png) repeat-y;
+}
 /* ---------- Animation Delays Classes ---------- */
 
 .de1ms { -webkit-animation-delay: 0.1s;
@@ -616,10 +618,9 @@ address > span {
 
 /* ---------- Aside Styling ---------- */
 
-.container > .bgImage {
-	/*margin: 0 0 0 20px;*/
+/*.container > .bgImage {
 	background: url("../images/asideIcons/asideBG.jpg") repeat-y;
-}
+}*/
 .aside {
 	background: #8c8c8c;
 	min-height: 310px;
@@ -729,7 +730,7 @@ address > span {
 }
 
 .asideFooter {
-	background-color: #666666;
+	/*background-color: #666666;*/
 	min-height: 630px;
 	/*box-shadow: -5px 0 4px rgba(35, 31, 32, 0.34);*/
 }
@@ -1003,7 +1004,7 @@ address > span {
 .mainBody > #aboutPage > .approvals > ul {
 	list-style: none;
 	background-color: #ededed;
-	padding: 15px 15px 5px 15px;
+	padding: 15px 15px 5px 25px;
 }
 .mainBody > #aboutPage > .approvals > ul > li {
 	width: 580px;
