@@ -51,6 +51,9 @@ i.bullet {
 .tstImg {
 	background: url(../images/grey_imgBG.png) repeat-y;
 }
+.bold {
+	font-weight: bold;
+}
 /* ---------- Animation Delays Classes ---------- */
 
 .de1ms { -webkit-animation-delay: 0.1s;
@@ -292,6 +295,8 @@ i.bullet {
 	text-shadow: none;
 }
 .subNav {
+	box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+
 	-webkit-animation-duration: 0.5s;
   -webkit-animation-delay: 0s;
   -webkit-animation-iteration-count: 1;
@@ -1024,6 +1029,58 @@ address > span {
   	-moz-animation-delay: 2s;
   	-o-animation-delay: 2s;
   	animation-delay: 2s;
+}
+
+/* ---------- Contact Styling ---------- */
+
+.mapBG {
+	position: absolute;
+	width: 655px;
+	height: 850px;
+	background: url("../images/IndiaMap.jpg") 0px 80px no-repeat;
+	margin: 0 0 0 -20px;
+	padding: 0 0 0 40px;
+
+	font-size: 12px;
+	letter-spacing: .2px;
+	line-height: 18px;
+	color: #666666;
+}
+.mainOffice {
+	display: block;
+	float: left;
+	margin: 0 15px 0 0;
+}
+.mainOffice > .blueHeading {
+	font-weight: bold;
+	font-size: 26px;
+	color: #2995dc;
+	text-transform: uppercase;
+	margin: 0 0 10px 0;
+}
+.mainOffice > .companyName {
+	display: inline-block;
+	font-size: 18px;
+	margin: 0 0 5px 0;
+}
+.regionalOffice {
+	float: left;
+	margin: 40px 0 0 0;
+	clear: right;
+}
+.regionalOffice > .darkBlue {
+	display: block;
+	color: #006699;
+	font-size: 16px;
+}
+.salesNetwork {
+	clear: both;
+	display: block;
+	float: left;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 100px 0 0 0;
 }
 
 /* ---------- Blog Styling ---------- */

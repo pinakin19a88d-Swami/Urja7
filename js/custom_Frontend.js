@@ -2,41 +2,48 @@
 $(document).ready(function(){
 	// ---------- Main Navigation AJAX Fuctions ----------
 	$("#aboutNav, #aboutFtNav").click(function(){
-		$("#bodyContent").load("ajax/aboutUsContent.html");
+		$("#bodyContent").load("ajax/aboutUsAjax.html");
 		$("ul > li").removeClass("active");
 		$("#aboutNav, #aboutFtNav").parent().addClass("active");
 	});
+
+	$("#contactNav, #contactFtNav").click(function(){
+		$("#bodyContent").load("ajax/contactAjax.html");
+		$("ul > li").removeClass("active");
+		$("#contactNav, #contactFtNav").parent().addClass("active");
+	});
+	
 	$("#blogNav, #blogFtNav").click(function(){
-		$("#bodyContent").load("ajax/blogContent.html");
+		$("#bodyContent").load("ajax/blogAjax.html");
 		$("ul > li").removeClass("active");
 		$("#blogNav, #blogFtNav").parent().addClass("active");
 	});
 
 	// ---------- Side Navigation AJAX Fuctions ----------
 	$("#energySideNav, #energySideNav > a").click(function(){
-		$("#bodyContent").load("ajax/energyContent.html");
+		$("#bodyContent").load("ajax/energyAjax.html");
 		$("ul > li").removeClass("active");
 	});
 	$("#pumpingSideNav, #pumpingSideNav > a").click(function(){
-		$("#bodyContent").load("ajax/pumpingContent.html");
+		$("#bodyContent").load("ajax/pumpingAjax.html");
 		$("ul > li").removeClass("active");
 	});
 	$("#optSideNav, #optSideNav > a").click(function(){
-		$("#bodyContent").load("ajax/optContent.html");
+		$("#bodyContent").load("ajax/optAjax.html");
 		$("ul > li").removeClass("active");
 	});
 	$("#productSideNav, #productSideNav > a").click(function(){
-		$("#bodyContent").load("ajax/productContent.html");
+		$("#bodyContent").load("ajax/productAjax.html");
 		$("ul > li").removeClass("active");
 	});
 	
 	// ---------- Aside Navigation AJAX Fuctions ----------
 	$("#aside1").click(function(){
-		$("#bodyContent").load("ajax/household.html");
+		$("#bodyContent").load("ajax/householdAjax.html");
 		$("ul > li").removeClass("active");
 	});
 	$("#aside2").click(function(){
-		$("#bodyContent").load("ajax/farmers.html");
+		$("#bodyContent").load("ajax/farmersAjax.html");
 		$("ul > li").removeClass("active");
 	});
 	$("#aside3").click(function(){
