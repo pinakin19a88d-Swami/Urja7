@@ -39,7 +39,7 @@ body {
 	box-shadow: 0 0 8px rgba(35,31,32,.4);
 }
 #bodyContent {
-	padding: 35px 0 0 0;
+	padding: 35px 0 25px 0;
 }
 i.bullet {
 	width: 12px;
@@ -1345,6 +1345,11 @@ address > span {
 	height: 208px;
 	float: left;
 	background: #2995dc;
+
+			transition:All 1s;
+			-moz-transition:All 1s;
+			-o-transition:All 1s;
+			-webkit-transition:All 1s;
 }
 .blueBox {
 	-webkit-box-shadow: 4px 0 4px rgba(35,31,32,.34); 
@@ -1382,6 +1387,11 @@ a.solarEnergy, a.energyOpti, a.solarPumpingText,  a.solarPumping {
 	display: block;
 	float: left;
 	position: relative;
+
+	transition:All 0.5s;
+			-moz-transition:All 0.5s;
+			-o-transition:All 0.5s;
+			-webkit-transition:All 0.5s;
 }
  a.solarPumping {
  	float: right;
@@ -1419,6 +1429,11 @@ a.solarPumping:hover .greenBox .linkText span.white {
 	display: block;
 	word-spacing: 1px;
 	color: #10476b;
+
+		transition:All 1s;
+			-moz-transition:All 1s;
+			-o-transition:All 1s;
+			-webkit-transition:All 1s;
 }
 .yellowOchreBox .linkText span {
 	color: #523f19;
@@ -1456,6 +1471,16 @@ a.solarPumping:hover .greenBox .linkText span.white {
 	top: 10px;
 	width: 25px;
 	height: 39px;
+	transition:All 1s;
+			-moz-transition:All 1s;
+			-o-transition:All 1s;
+			-webkit-transition:All 1s;	
+}
+.blueArrow, .greenArrow,  .ochreArrow {
+	transition:All 1s;
+			-moz-transition:All 1s;
+			-o-transition:All 1s;
+			-webkit-transition:All 1s;
 }
 .blueArrow {
 	background:url(../images/arrow_blue.png) no-repeat;
