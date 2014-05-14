@@ -5,7 +5,13 @@ $(document).ready(function(){
 		$("#bodyContent").load("ajax/aboutUsAjax.html");
 		$("ul > li").removeClass("active");
 		$("#aboutNav, #aboutFtNav").parent().addClass("active");
-	});	
+	});
+
+	$("#careersNav, #careersFtNav").click(function(){
+		$("#bodyContent").load("ajax/careersAjax.html");
+		$("ul > li").removeClass("active");
+		$("#careersNav, #careersFtNav").parent().addClass("active");
+	});
 
 	$("#contactNav, #contactFtNav").click(function(){
 		$("#bodyContent").load("ajax/contactAjax.html");
@@ -47,19 +53,19 @@ $(document).ready(function(){
 		$("ul > li").removeClass("active");
 	});
 	$("#aside3").click(function(){
-		$("#bodyContent").load("ajax/Community.html");
+		$("#bodyContent").load("ajax/communityAjax.html");
 		$("ul > li").removeClass("active");
 	});
 	$("#aside4").click(function(){
-		$("#bodyContent").load("ajax/Business.html");
+		$("#bodyContent").load("ajax/businessAjax.html");
 		$("ul > li").removeClass("active");
 	});
 	$("#aside5").click(function(){
-		$("#bodyContent").load("ajax/Public_Voluntary.html");
+		$("#bodyContent").load("ajax/publicVoluntaryAjax.html");
 		$("ul > li").removeClass("active");
 	});
 	$("#aside6").click(function(){
-		$("#bodyContent").load("ajax/urjaFuture_Advantage.html");
+		$("#bodyContent").load("ajax/urjaFutureAjax.html");
 		$("ul > li").removeClass("active");
 	});
 			  
