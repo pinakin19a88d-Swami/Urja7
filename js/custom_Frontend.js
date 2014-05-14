@@ -44,7 +44,7 @@ $(document).ready(function(){
 		$("ul > li").removeClass("active");
 	});
 	$("#aside4").click(function(){
-		$("#bodyContent").load("ajax/farmers.html");
+		$("#bodyContent").load("ajax/Business.html");
 		$("ul > li").removeClass("active");
 	});
 	$("#aside5").click(function(){
