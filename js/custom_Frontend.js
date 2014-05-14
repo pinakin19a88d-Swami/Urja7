@@ -5,7 +5,7 @@ $(document).ready(function(){
 		$("#bodyContent").load("ajax/aboutUsAjax.html");
 		$("ul > li").removeClass("active");
 		$("#aboutNav, #aboutFtNav").parent().addClass("active");
-	});
+	});	
 
 	$("#contactNav, #contactFtNav").click(function(){
 		$("#bodyContent").load("ajax/contactAjax.html");
@@ -20,19 +20,19 @@ $(document).ready(function(){
 	});
 
 	// ---------- Side Navigation AJAX Fuctions ----------
-	$("#energySideNav, #energySideNav > a").click(function(){
+	$("#energyNav, #energySideNav, #energySideNav > a").click(function(){
 		$("#bodyContent").load("ajax/energyAjax.html");
 		$("ul > li").removeClass("active");
 	});
-	$("#pumpingSideNav, #pumpingSideNav > a").click(function(){
+	$("#pumpingNav, #pumpingSideNav, #pumpingSideNav > a").click(function(){
 		$("#bodyContent").load("ajax/pumpingAjax.html");
 		$("ul > li").removeClass("active");
 	});
-	$("#optSideNav, #optSideNav > a").click(function(){
+	$("#optNav, #optSideNav, #optSideNav > a").click(function(){
 		$("#bodyContent").load("ajax/optAjax.html");
 		$("ul > li").removeClass("active");
 	});
-	$("#productSideNav, #productSideNav > a").click(function(){
+	$("#productNav, #productSideNav, #productSideNav > a").click(function(){
 		$("#bodyContent").load("ajax/productAjax.html");
 		$("ul > li").removeClass("active");
 	});

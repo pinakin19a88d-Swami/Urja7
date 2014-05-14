@@ -1117,16 +1117,24 @@ address > span {
 }
 
 /* ----- for all SideNav pages -----*/
-#bp1, #bp2 {
+#bp1, #bp2, #bp3, #bp4 {
 	margin: 0 0 20px 0;
 }
 #bp1 > i,
-#bp2 > i {
+#bp2 > i,
+#bp3 > i,
+#bp4 > i {
 	display: inline-block;
 	width: 11px;
 	height: 11px;
 	background: url("../images/Urja_sprite.png") 0 0 no-repeat;
 	margin: 2px 5px 0 0;
+}
+#energyPara1, #energyPara2,
+#pumpingPara1,
+#optPara1,
+#productPara1 {
+  margin: 0 0 10px 0;
 }
 
 /* --------- Energy Styling ---------- */
@@ -1152,19 +1160,9 @@ address > span {
 	color: #ff3333;
 	text-transform: uppercase;
 	letter-spacing: .2px;
-	margin: 0 0 10px 0;
 }
 .mainBody > #energyPage > h2 {
 	font-size: 26px;
-}
-#energyPara1 {
-  margin: 0 0 10px 0;
-}
-#energyPara2 {
-	margin: 0 0 10px 0;
-}
-#energyPara3 {
-	margin: 0 0 10px 0;
 }
 .mainBody > #energyPage > p,
 #energyPage > .bulletPts > ul > li > p {
@@ -1176,7 +1174,7 @@ address > span {
 	letter-spacing: .2px;
 	line-height: 16px;
 	color: #666666;
-  margin: 0 0 10px 0;
+  	margin: 0 0 10px 0;
 }
 
 /* --------- Pumping Styling ---------- */
@@ -1199,7 +1197,6 @@ address > span {
 	color: #ff3333;
 	text-transform: uppercase;
 	letter-spacing: .2px;
-	margin: 0 0 10px 0;
 }
 .mainBody > #pumpingPage > h2 {
 	font-weight: bold;
@@ -1207,15 +1204,6 @@ address > span {
 	color: #669933;
 	text-transform: uppercase;
 	letter-spacing: .2px; 
-}
-#pumpingPara1 {
-  margin: 0 0 10px 0;
-}
-#pumpingPara2 {
-	margin: 0 0 10px 0;
-}
-#pumpingPara3 {
-	margin: 0 0 10px 0;
 }
 .mainBody > #pumpingPage > p,
 #pumpingPage > .bulletPts > ul > li > p {
@@ -1226,7 +1214,7 @@ address > span {
 	letter-spacing: .2px;
 	line-height: 16px;
 	color: #666666;
-  margin: 0 0 10px 0;
+  	margin: 0 0 10px 0;
 }
 
 /* --------- Optimization Styling ---------- */
@@ -1253,18 +1241,9 @@ address > span {
 .mainBody > #optPage > h2 {
 	font-weight: bold;
 	font-size: 26px;
-	color: #669933;
+	color: #cc9933;
 	text-transform: uppercase;
 	letter-spacing: .2px; 
-}
-#optPara1 {
-  margin: 0 0 10px 0;
-}
-#optPara2 {
-	margin: 0 0 10px 0;
-}
-#optPara3 {
-	margin: 0 0 10px 0;
 }
 .mainBody > #optPage > p,
 #optPage > .bulletPts > ul > li > p {
@@ -1275,7 +1254,7 @@ address > span {
 	letter-spacing: .2px;
 	line-height: 16px;
 	color: #666666;
-  margin: 0 0 10px 0;
+ 	margin: 0 0 10px 0;
 }
 
 /* --------- Product Styling ---------- */
@@ -1309,7 +1288,7 @@ address > span {
 .mainBody > #productPage > h2 {
 	font-weight: bold;
 	font-size: 26px;
-	color: #669933;
+	color: #ed9d2a;
 	text-transform: uppercase;
 	letter-spacing: .2px; 
 }
@@ -1322,7 +1301,7 @@ address > span {
 	letter-spacing: .2px;
 	line-height: 16px;
 	color: #666666;
-  margin: 0 0 4px 0;
+	margin: 0 0 4px 0;
 }
 #productPage > #productPara1 {
   margin: 0 0 20px 0;
