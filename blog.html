@@ -6,59 +6,17 @@
 		<link rel="stylesheet" href="css/bootstrap.css"  type="text/css"/>
 		<link rel="stylesheet" href="css/animate.css">
 		<link rel="stylesheet" href="css/urjaStylesheet.css"  type="text/css"/>
-		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	
 		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="js/custom_Frontend.js"></script>
 
 		<script type="text/javascript">
 			$(document).ready(function(){
 
-				$("#bodyContent").load("ajax/blogContent.html");
-
-				// ---------- Main Navigation AJAX Fuctions ----------
-				$("#aboutNav, #aboutFtNav").click(function(){
-					$("#bodyContent").load("ajax/aboutUsContent.html");
-					$("ul > li").removeClass("active");
-					$("#aboutNav, #aboutFtNav").parent().addClass("active");
-				});
-				$("#blogNav, #blogFtNav").click(function(){
-					$("#bodyContent").load("ajax/blogContent.html");
-					$("ul > li").removeClass("active");
-					$("#blogNav, #blogFtNav").parent().addClass("active");
-				});
-
-				// ---------- Side Navigation AJAX Fuctions ----------
-				$("#energySideNav").click(function(){
-					$("#bodyContent").load("ajax/energyContent.html");
-					$("ul > li").removeClass("active");
-				});
-				$("#energySideNav > a").click(function(){
-					$("#bodyContent").load("ajax/energyContent.html");
-					$("ul > li").removeClass("active");
-				});
-				$("#pumpingSideNav").click(function(){
-					$("#bodyContent").load("ajax/pumpingContent.html");
-					$("ul > li").removeClass("active");
-				});
-				$("#pumpingSideNav > a").click(function(){
-					$("#bodyContent").load("ajax/pumpingContent.html");
-					$("ul > li").removeClass("active");
-				});
-				$("#optSideNav").click(function(){
-					$("#bodyContent").load("ajax/optContent.html");
-					$("ul > li").removeClass("active");
-				});
-				$("#optSideNav > a").click(function(){
-					$("#bodyContent").load("ajax/optContent.html");
-					$("ul > li").removeClass("active");
-				});
-				$("#productSideNav").click(function(){
-					$("#bodyContent").load("ajax/productContent.html");
-					$("ul > li").removeClass("active");
-				});
-				$("#productSideNav > a").click(function(){
-					$("#bodyContent").load("ajax/productContent.html");
-					$("ul > li").removeClass("active");
-				});
+				$("#bodyContent").load("ajax/blogAjax.html");
+				$("ul > li").removeClass("active");
+				$("#blogNav, #blogFtNav").parent().addClass("active");
+			
 			});
 		</script>
 	</head>
@@ -73,23 +31,24 @@
 		              	<a href="#" class="animated fadeIn companyLogo">Company Logo</a>   
 		                <ul class="nav">
 		                  <li><a href="index.html">Home</a></li>
-		                  <li class="active"><a id="aboutNav" href="#">About Us</a>
+		                  <li><a id="aboutNav" href="#">About Us</a>
 		                  	<ul class="subNav animated fadeInDown">
-		                  		<li><a href="">Certification</a></li>
+		                  		<li><a id="certNav" href="">Certification</a></li>
 		                  	</ul>
 		                  </li>
 		                  <li><a href="#">Clean Energy</a>
 		                  	<ul class="subNav animated fadeInDown">
-		                  		<li><a href="">Solar Energy</a></li>
-		                  		<li><a href="">Solar Pumping</a></li>
-		                  		<li><a href="">Energy Optimization</a></li>
+		                  		<li><a id="energyNav" href="#">Solar Energy</a></li>
+		                  		<li><a id="pumpingNav" href="#">Solar Pumping</a></li>
+		                  		<li><a id="optNav" href="#">Energy Optimization</a></li>
+		                  		<li><a id="productNav" href="#">Solar Product</a></li>
 		                  	</ul>
 		                  </li>
-		                  <li><a href="#">Resource Base</a></li>
-		                  <li><a href="#">Careers</a></li>
-		                  <li><a href="#">Contact</a>
+		                  <li><a id="resourceNav" href="#">Resource Base</a></li>
+		                  <li><a id="careersNav" href="#">Careers</a></li>
+		                  <li><a id="contactNav" href="#">Contact</a>
 		                  	<ul class="subNav animated fadeInDown">
-		                  		<li><a href="">Network Coverage</a></li>
+		                  		<li><a id="networkNav" href="">Network Coverage</a></li>
 		                  	</ul>
 		                  </li>
 		                  <li><a id="blogNav" href="#">Blog<i id="blogIcon"></i></a></li>
@@ -115,19 +74,19 @@
 					</div><!-- span8 mainBody -->
 
 					<div class="span3 aside">
-						<ul class="nav nav-list">
-						    <li><a href="#"><i id="icon1"></i>Households</a></li>
-						    <li><a href="#"><i id="icon2"></i>Farmers &amp; Landowners</a></li>
-						    <li><a href="#"><i id="icon3"></i>Communities</a></li>
-						    <li><a href="#"><i id="icon4"></i>Businesses</a></li>
-						    <li><a href="#"><i id="icon5"></i>Public Voluntary Sector</a></li>
+						<ul class="nav nav-list iconBtn">
+						    <li><a href="#" id="aside1"><i id="icon1"></i>Households</a></li>
+						    <li><a href="#" id="aside2"><i id="icon2"></i>Farmers &amp; Landowners</a></li>
+						    <li><a href="#" id="aside3"><i id="icon3"></i>Communities</a></li>
+						    <li><a href="#" id="aside4"><i id="icon4"></i>Businesses</a></li>
+						    <li><a href="#" id="aside5"><i id="icon5"></i>Public Voluntary Sector</a></li>
 						</ul>
 						<div class="urjaAdvantage">
-							<h2><a href="#"><i id="icon6"></i><h3>UrjaFuture</h3><h3>Advantage</h3></a></h2>
+							<h2><a href="#" id="aside6"><i id="icon6"></i><h3>UrjaFuture</h3><h3>Advantage</h3></a></h2>
 						</div>
 						<div class="asideFooter">
 							<div class="energyCon">
-								<h2><a href="#"><i id="icon7"></i><h3>Measure Your</h3><h3>Energy Consumption</h3></a></h2>
+								<h2><a href="#" id="aside7"><i id="icon7"></i><h3>Measure Your</h3><h3>Energy Consumption</h3></a></h2>
 							</div>
 							<ul class="nav nav-list footerList">
 								<li><a href="#">News on Projects</a></li>
@@ -169,14 +128,14 @@
 		            <div class="navbar-inner footerNavbar-inner">
 						<div class="container">
 							<ul class="nav nav-list footerNav">
-								<li><a href="#">Home</a></li>
-								<li class="active"><a id="aboutFtNav" href="#">About Us</a></li>
+								<li><a href="index.html">Home</a></li>
+								<li><a id="aboutFtNav" href="#">About Us</a></li>
 								<li><a href="#">Clean Energy</a></li>
-								<li><a href="#">Resource Base</a></li>
+								<li><a id="resourceFtNav" href="#">Resource Base</a></li>
 							</ul>
 							<ul class="nav nav-list footerNav">
-								<li><a href="#">Careers</a></li>
-								<li><a href="#">Contact</a></li>
+								<li><a id="careersFtNav" href="#">Careers</a></li>
+								<li><a id="contactFtNav" href="#">Contact</a></li>
 								<li><a id="blogFtNav" href="#">Blog</a></li>
 							</ul>
 							<address>
@@ -200,7 +159,7 @@
 		          		<p>Web Site Developed by - <a href="http://inspiremultimedia.co.in">Inspiremultimedia.co.in</a></p>
 	          		</div>
 	          	</div>	<!-- footerNavbar -->
-			</div>
+			</div> <!-- footerWrapper -->
 	</div><!-- pageWrapper -->
 	<script src="js/jquery-1.11.0.min.js"></script>
 	<script src="js/bootstrap.js"></script>
