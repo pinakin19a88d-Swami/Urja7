@@ -48,6 +48,9 @@ i.bullet {
 	margin: 2px 0 0 0;
 	background: url("../images/Urja_sprite.png") 0 0 no-repeat;
 }
+ul {
+	list-style: none;
+}
 .tstImg {
 	background: url(../images/grey_imgBG.png) repeat-y;
 }
@@ -627,9 +630,6 @@ address > span {
 
 /* ---------- Aside Styling ---------- */
 
-/*.container > .bgImage {
-	background: url("../images/asideIcons/asideBG.jpg") repeat-y;
-}*/
 .aside {
 	background: #8c8c8c;
 	min-height: 310px;
@@ -693,7 +693,6 @@ address > span {
 	color: #fff;
 	text-shadow: none;
 	padding: 0;
-	/*margin: 10px 0 0 0;*/
 	margin: 0;
 	height: 36px;
 }
@@ -737,7 +736,6 @@ address > span {
 .urjaAdvantage > h2 > a:hover > #icon6 {
 	background: url("../images/Urja_sprite.png") -60px -261px no-repeat;
 }
-
 .asideFooter {
 	background-color: #666666;
 	min-height: 630px;
@@ -748,8 +746,6 @@ address > span {
 	background-color: #7a7a7a;
 	box-shadow: 0 3px 3px rgba(35, 31, 32, 0.30);
 }
-
-
 .asideFooter .energyCon > h2 > a {
 	position: absolute;
 	text-decoration: none;
@@ -934,11 +930,6 @@ address > span {
 	width: 571px;
 	height: 200px;
 	margin: 10px 0 10px 0;
-
-	-webkit-animation-delay: 0.7s;
-  	-moz-animation-delay: 0.7s;
-  	-o-animation-delay: 0.7s;
-  	animation-delay: 0.7s;
 }
 #aboutPage > .blueHeading {
 	font-weight: bold;
@@ -953,35 +944,9 @@ address > span {
 	color: #ff3333;
 	text-transform: uppercase;
 	letter-spacing: .2px;
-
-	-webkit-animation-delay: 1.2s;
-  	-moz-animation-delay: 1.2s;
-  	-o-animation-delay: 1.2s;
-  	animation-delay: 1.2s;
-}
-.mainBody {
-	/*font-family: "Century Gothic";*/
-	overflow: hidden;
 }
 .mainBody > #aboutPage > h2 {
 	font-size: 26px;
-
-	-webkit-animation-delay: 0.5s;
-  	-moz-animation-delay: 0.5s;
-  	-o-animation-delay: 0.5s;
-  	animation-delay: 0.5s;
-}
-#aboutPara1 {
-	-webkit-animation-delay: 1s;
-  	-moz-animation-delay: 1s;
-  	-o-animation-delay: 1s;
-  	animation-delay: 1s;
-}
-#aboutPara2 {
-	-webkit-animation-delay: 1.4s;
-  	-moz-animation-delay: 1.4s;
-  	-o-animation-delay: 1.4s;
-  	animation-delay: 1.4s;
 }
 .mainBody > #aboutPage > p {
 	width: 571px;
@@ -993,12 +958,6 @@ address > span {
 	line-height: 16px;
 	color: #666666;
 }
-#certHeading {
-	-webkit-animation-delay: 1.6s;
-  	-moz-animation-delay: 1.6s;
-  	-o-animation-delay: 1.6s;
-  	animation-delay: 1.6s;
-}
 .mainBody > #aboutPage > .approvals {
 	width: 632px;
 	position: relative;
@@ -1009,11 +968,6 @@ address > span {
 	line-height: 16px;
 	color: #666666;
 	margin: 0 0 15px -15px;
-
-	-webkit-animation-delay: 1.8s;
-  	-moz-animation-delay: 1.8s;
-  	-o-animation-delay: 1.8s;
-  	animation-delay: 1.8s;
 }
 .mainBody > #aboutPage > .approvals > ul {
 	list-style: none;
@@ -1033,17 +987,11 @@ address > span {
 	background-image: url("../images/aboutUsCertificates.jpg");
 	background-repeat: no-repeat;
 	padding: 0 0 15px 0;
-
-	-webkit-animation-delay: 2s;
-  	-moz-animation-delay: 2s;
-  	-o-animation-delay: 2s;
-  	animation-delay: 2s;
 }
 
 /* ---------- Contact Styling ---------- */
 
 .mapBG {
-	position: absolute;
 	width: 655px;
 	height: 850px;
 	background: url("../images/IndiaMap.jpg") 0px 80px no-repeat;
@@ -1107,11 +1055,6 @@ address > span {
 	color: #669933;
 	text-transform: uppercase;
 	letter-spacing: .2px;
-
-  	-webkit-animation-delay: 0.5s;
-  	-moz-animation-delay: 0.5s;
-  	-o-animation-delay: 0.5s;
-  	animation-delay: 0.5s;
 }
 .greenPara {
 	display: inline-block;
@@ -1131,26 +1074,9 @@ address > span {
 	font-size: 10px;
 	color: #0066cc;
 }
-#para1 {
-  	-webkit-animation-delay: 1s;
-  	-moz-animation-delay: 1s;
-  	-o-animation-delay: 1s;
-  	animation-delay: 1s;
-}
-#para2 {
-  	-webkit-animation-delay: 1.5s;
-  	-moz-animation-delay: 1.5s;
-  	-o-animation-delay: 1.5s;
-  	animation-delay: 1.5s;
-}
 .blogImage1 {
 	display: inline-block;
 	margin-top: 20px;
-
-  	-webkit-animation-delay: 1.7s;
-  	-moz-animation-delay: 1.7s;
-  	-o-animation-delay: 1.7s;
-  	animation-delay: 1.7s;
 }
 .imageCaption {
 	display: block;
@@ -1164,11 +1090,6 @@ address > span {
 	color: #003366;
 	margin-top: 10px;
 	margin-right: 50px;
-
-  	-webkit-animation-delay: 1.7s;
-  	-moz-animation-delay: 1.7s;
-  	-o-animation-delay: 1.7s;
-  	animation-delay: 1.7s;
 }
 .blogLinks {
 	/*font-family: "Century Gothic";*/
@@ -1177,17 +1098,13 @@ address > span {
 	font-style: italic;
 	letter-spacing: .2px;
 	line-height: 16px;
-
-  	-webkit-animation-delay: 1.7s;
-  	-moz-animation-delay: 1.7s;
-  	-o-animation-delay: 1.7s;
-  	animation-delay: 1.7s;
 }
 .blogLinks > a {
 	display: inline-block;
 	width: 435px;
 	color: #003366;
 	float: left;
+	margin: 0 0 20px 0;
 }
 .nextPage {
 	width: 22px;
@@ -1197,6 +1114,19 @@ address > span {
 	float: right;
 	margin: 20px 10px 0 0;
 	cursor: pointer;
+}
+
+/* ----- for all SideNav pages -----*/
+#bp1, #bp2 {
+	margin: 0 0 20px 0;
+}
+#bp1 > i,
+#bp2 > i {
+	display: inline-block;
+	width: 11px;
+	height: 11px;
+	background: url("../images/Urja_sprite.png") 0 0 no-repeat;
+	margin: 2px 5px 0 0;
 }
 
 /* --------- Energy Styling ---------- */
@@ -1224,20 +1154,8 @@ address > span {
 	letter-spacing: .2px;
 	margin: 0 0 10px 0;
 }
-.mainBody {
-	/*font-family: "Century Gothic";*/
-	overflow: hidden;
-}
 .mainBody > #energyPage > h2 {
 	font-size: 26px;
-}
-#bp1 > i,
-#bp2 > i {
-	display: inline-block;
-	width: 11px;
-	height: 11px;
-	background: url("../images/Urja_sprite.png") 0 0 no-repeat;
-	margin: 2px 5px 0 0;
 }
 #energyPara1 {
   margin: 0 0 10px 0;
@@ -1283,23 +1201,12 @@ address > span {
 	letter-spacing: .2px;
 	margin: 0 0 10px 0;
 }
-.mainBody {
-	overflow: hidden;
-}
 .mainBody > #pumpingPage > h2 {
 	font-weight: bold;
 	font-size: 26px;
 	color: #669933;
 	text-transform: uppercase;
 	letter-spacing: .2px; 
-}
-#bp1 > i,
-#bp2 > i {
-	display: inline-block;
-	width: 11px;
-	height: 11px;
-	background: url("../images/Urja_sprite.png") 0 0 no-repeat;
-	margin: 2px 5px 0 0;
 }
 #pumpingPara1 {
   margin: 0 0 10px 0;
@@ -1322,7 +1229,107 @@ address > span {
   margin: 0 0 10px 0;
 }
 
+/* --------- Optimization Styling ---------- */
+
+#optPage > .optBanner{
+	width: 571px;
+	height: 200px;
+	margin: 10px 0 10px 0;
+}
+#optPage > .blueHeading {
+	font-weight: bold;
+	font-size: 14px;
+	color: #2995dc;
+	text-transform: uppercase;
+	letter-spacing: .2px;
+}
+#optPage > .redHeading {
+	font-weight: bold;
+	font-size: 14px;
+	color: #ff3333;
+	text-transform: uppercase;
+	letter-spacing: .2px;
+}
+.mainBody > #optPage > h2 {
+	font-weight: bold;
+	font-size: 26px;
+	color: #669933;
+	text-transform: uppercase;
+	letter-spacing: .2px; 
+}
+#optPara1 {
+  margin: 0 0 10px 0;
+}
+#optPara2 {
+	margin: 0 0 10px 0;
+}
+#optPara3 {
+	margin: 0 0 10px 0;
+}
+.mainBody > #optPage > p,
+#optPage > .bulletPts > ul > li > p {
+	width: 571px;
+	font-size: 12px;
+	font-weight: normal;
+	text-align: justify;
+	letter-spacing: .2px;
+	line-height: 16px;
+	color: #666666;
+  margin: 0 0 10px 0;
+}
+
+/* --------- Product Styling ---------- */
+
+#productPage > .productBanner{
+	width: 571px;
+	height: 200px;
+	margin: 10px 0 10px 0;
+}
+.productImgs > img {
+	margin: 0 0 20px 0;
+}
+.productInfo > .blueHeading {
+	font-weight: bold;
+	font-size: 15px;
+	color: #2995dc;
+	text-transform: uppercase;
+	letter-spacing: .2px;
+}
+.blueHeading > span {
+	font-size: 12px;
+	color: #666666;
+}
+#productPage > .redHeading {
+	font-weight: bold;
+	font-size: 14px;
+	color: #ff3333;
+	text-transform: uppercase;
+	letter-spacing: .2px;
+}
+.mainBody > #productPage > h2 {
+	font-weight: bold;
+	font-size: 26px;
+	color: #669933;
+	text-transform: uppercase;
+	letter-spacing: .2px; 
+}
+.mainBody > #productPage > p,
+#productPage > .bulletPts > ul > li > p {
+	width: 571px;
+	font-size: 12px;
+	font-weight: normal;
+	text-align: justify;
+	letter-spacing: .2px;
+	line-height: 16px;
+	color: #666666;
+  margin: 0 0 4px 0;
+}
+#productPage > #productPara1 {
+  margin: 0 0 20px 0;
+}
+
 /* ---------- Home Page Styling ---------- */
+
 .sliderWrapper {
 	float: left;
 	width: 340px;
