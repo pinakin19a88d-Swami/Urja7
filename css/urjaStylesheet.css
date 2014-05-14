@@ -48,7 +48,9 @@ i.bullet {
 	margin: 2px 0 0 0;
 	background: url("../images/Urja_sprite.png") 0 0 no-repeat;
 }
-
+.tstImg {
+	background: url(../images/grey_imgBG.png) repeat-y;
+}
 /* ---------- Animation Delays Classes ---------- */
 
 .de1ms { -webkit-animation-delay: 0.1s;
@@ -618,10 +620,9 @@ address > span {
 
 /* ---------- Aside Styling ---------- */
 
-.container > .bgImage {
-	/*margin: 0 0 0 20px;*/
+/*.container > .bgImage {
 	background: url("../images/asideIcons/asideBG.jpg") repeat-y;
-}
+}*/
 .aside {
 	background: #8c8c8c;
 	min-height: 310px;
@@ -731,9 +732,9 @@ address > span {
 }
 
 .asideFooter {
-	background-color: #666666;
+	/*background-color: #666666;*/
 	min-height: 630px;
-	box-shadow: -5px 0 4px rgba(35, 31, 32, 0.34);
+	/*box-shadow: -5px 0 4px rgba(35, 31, 32, 0.34);*/
 }
 .asideFooter .energyCon {
 	height: 52px;
@@ -785,25 +786,35 @@ address > span {
 
 /* --------- Household Styling ---------- */
 
-#householdPage > .householdBanner{
+#householdPage > .householdBanner, 
+#communityPage > .householdBanner,
+#businessPage > .householdBanner {
 	width: 571px;
 	height: 200px;
 	margin: 10px 0 10px 0;
 }
-#householdPage > .blueHeading {
+#householdPage > .blueHeading, 
+#communityPage > .blueHeading,
+#businessPage > .blueHeading {
 	font-weight: bold;
 	font-size: 16px;
 	color: #2995dc;
 	text-transform: uppercase;
 	letter-spacing: .2px;
 }
-.mainBody > #householdPage > h2 {
+.mainBody > #householdPage > h2, 
+.mainBody > #communityPage > h2,
+.mainBody > #businessPage > h2 {
 	font-size: 26px;
 }
-#householdPara {
+#householdPara, 
+#communityPage > p,
+#businessPage > p {
   margin: 0 0 10px 0;
 }
-.mainBody > #householdPage > p {
+.mainBody > #householdPage > p,
+.mainBody > #communityPage > p,
+.mainBody > #businessPage > p {
 	width: 571px;
 	font-size: 12px;
 	font-weight: normal;
@@ -898,6 +909,12 @@ address > span {
 	text-align: center;
 	margin: 10px 0 0 0;
 }
+/* community page*/
+/*#communityPage > .householdBanner{
+	width: 571px;
+	height: 200px;
+	margin: 10px 0 10px 0;
+}*/
 
 /* ---------- About Us Styling ---------- */
 
@@ -989,7 +1006,7 @@ address > span {
 .mainBody > #aboutPage > .approvals > ul {
 	list-style: none;
 	background-color: #ededed;
-	padding: 15px 15px 5px 15px;
+	padding: 15px 15px 5px 25px;
 }
 .mainBody > #aboutPage > .approvals > ul > li {
 	width: 580px;
