@@ -58,5 +58,9 @@ $(document).ready(function(){
 		$("#bodyContent").load("ajax/Public_Voluntary.html");
 		$("ul > li").removeClass("active");
 	});
+	$("#aside6").click(function(){
+		$("#bodyContent").load("ajax/urjaFuture_Advantage.html");
+		$("ul > li").removeClass("active");
+	});
 			  
 });
