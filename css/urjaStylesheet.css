@@ -479,7 +479,11 @@ i.bullet {
     /* Should be unset in IE9+ I think. */
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
-
+#futureAdvtPage a  {
+	color: #330000;
+	display: block;
+	margin-bottom: 90px;
+}
 /* ---------- Services Navigation Styling ---------- */
 
 .navDivision {
@@ -735,7 +739,7 @@ address > span {
 }
 
 .asideFooter {
-	/*background-color: #666666;*/
+	background-color: #666666;
 	min-height: 630px;
 	/*box-shadow: -5px 0 4px rgba(35, 31, 32, 0.34);*/
 }
@@ -798,7 +802,8 @@ address > span {
 }
 #householdPage > .blueHeading, 
 #communityPage > .blueHeading,
-#businessPage > .blueHeading {
+#businessPage > .blueHeading,
+#futureAdvtPage > .blueHeading {
 	font-weight: bold;
 	font-size: 16px;
 	color: #2995dc;
@@ -807,8 +812,12 @@ address > span {
 }
 .mainBody > #householdPage > h2, 
 .mainBody > #communityPage > h2,
-.mainBody > #businessPage > h2 {
+.mainBody > #businessPage > h2,
+.mainBody > #futureAdvtPage > h2 {
 	font-size: 26px;
+}
+.mainBody > #futureAdvtPage > h2 {
+	margin-bottom: 20px;
 }
 #householdPara, 
 #communityPage > p,
