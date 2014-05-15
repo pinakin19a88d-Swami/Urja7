@@ -776,6 +776,10 @@ address > span {
 	padding: 0 0 0 0;
 	margin: -8px 0 0 60px;
 }
+.asideFooter .energyCon > h2 > a:hover > h3 {
+	color: #ffcc33;
+	text-decoration: underline;
+}
 #icon7 {
 	width: 37px;
 	height: 37px;
@@ -797,6 +801,9 @@ address > span {
 }
 .asideFooter .footerList > li > a {
 	margin: 10px 0 0 10px;
+}
+.asideFooter .footerList > li > a:hover {
+	color: #ffcc33;
 }
 .asideFooter .nav > li > a:hover, .asideFooter .nav > li > a:focus {
 	text-decoration: underline;
@@ -1528,11 +1535,18 @@ a.solarPumping:hover .greenBox .greenArrow {
 	float: left;
 	width: 376px;
 	height: 50px;
+
+	-webkit-box-shadow: 0 3px 3px rgba(35,31,32,.4); 
+	-moz-box-shadow: 0 3px 3px rgba(35,31,32,.4); 
+	box-shadow: 0 3px 3px rgba(35,31,32,.4);
+	position: relative;
 }
 .allIcons {
-	min-height: 136px;
+	/*min-height: 136px;*/
+	min-height: 123px;
 	background: #7f7f7f;
-	padding: 0 0 0 35px;
+	/*padding: 0 0 0 35px;*/
+	padding: 13px 0 0 35px;
 	width: 341px;
 	float: left;
 }
@@ -1544,14 +1558,17 @@ a.solarPumping:hover .greenBox .greenArrow {
 }
 .otherLinks {
 	background: #666;
-	min-height: 136px;
+	/*min-height: 136px;*/
+	min-height: 111px;
+	padding: 25px 0 0 46px;
+	width: 178px;
 }
 
 /* home icons*/
 .homeIco {
 	padding: 0;
 }
-.homeIco li a {
+.homeIco li a, .otherIcon li a {
 	color: #fff;
 	text-shadow: none;
 	padding: 0
@@ -1565,6 +1582,11 @@ a.solarPumping:hover .greenBox .greenArrow {
 }
 .homeIco > li > a:hover {
 	background: none;
+}
+.otherIcon li a:hover {
+	background: none;
+	color: #ffcc33;
+	text-decoration: underline;
 }
 li.setWidth {
 	width: 362px;
