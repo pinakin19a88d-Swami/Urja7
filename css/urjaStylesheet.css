@@ -638,42 +638,53 @@ address > span {
 	background: #8c8c8c;
 	min-height: 310px;
 }
-.aside #icon1 {
+.aside #icon1,
+.icon11  {
 	background: url("../images/Urja_sprite.png") 0 -14px no-repeat;
 }
-.aside .nav > li > a:hover > #icon1 {
+.aside .nav > li > a:hover > #icon1,
+.homeIco > li> a:hover > .icon11 {
 	background: url("../images/Urja_sprite.png") -40px -14px no-repeat;
 }
 
-.aside #icon2 {
+.aside #icon2,
+.icon12 {
 	background: url("../images/Urja_sprite.png") 0 -54px no-repeat;
 }
-.aside .nav > li > a:hover > #icon2 {
+.aside .nav > li > a:hover > #icon2,
+.homeIco > li> a:hover > .icon12 {
 	background: url("../images/Urja_sprite.png") -40px -54px no-repeat;
 }
 
-.aside #icon3 {
+.aside #icon3,
+.icon13 {
 	background: url("../images/Urja_sprite.png") 0 -95px no-repeat;
 }
-.aside .nav > li > a:hover > #icon3 {
+.aside .nav > li > a:hover > #icon3,
+.homeIco > li> a:hover > .icon13 {
 	background: url("../images/Urja_sprite.png") -40px -95px no-repeat;
 }
 
-.aside #icon4 {
+.aside #icon4,
+.icon14 {
 	background: url("../images/Urja_sprite.png") 0 -136px no-repeat;
 }
-.aside .nav > li > a:hover > #icon4 {
+.aside .nav > li > a:hover > #icon4,
+.homeIco > li> a:hover > .icon14 {
 	background: url("../images/Urja_sprite.png") -40px -136px no-repeat;
 }
 
-.aside #icon5 {
+.aside #icon5, 
+.icon15 {
 	background: url("../images/Urja_sprite.png") 0 -177px no-repeat;
 }
-.aside .nav > li > a:hover > #icon5 {
+.aside .nav > li > a:hover > #icon5, 
+.homeIco > li> a:hover > .icon15 {
 	background: url("../images/Urja_sprite.png") -40px -177px no-repeat;
 }
 
-#icon1, #icon2, #icon3, #icon4, #icon5 {
+#icon1, #icon2, #icon3, #icon4, #icon5, 
+.icon11,.icon12,.icon13,.icon14,.icon15 {
 	display: inline-block;
 	margin: 0 12px -12px 0;
 	width: 36px;
@@ -1316,6 +1327,7 @@ address > span {
 .sliderWrapper {
 	float: left;
 	width: 340px;
+	height: 580px;
 	overflow: hidden;
 }
 .imgBtnWrapper {
@@ -1511,15 +1523,18 @@ a.solarPumping:hover .greenBox .greenArrow {
 	float: left;
 
 }
-.urjaAdvg, .allIcons {
+.urjaAdvg {
 	background: #666;
 	float: left;
 	width: 376px;
 	height: 50px;
 }
 .allIcons {
-	min-height: 123px;
+	min-height: 136px;
 	background: #7f7f7f;
+	padding: 0 0 0 35px;
+	width: 341px;
+	float: left;
 }
 .measureCons, .otherLinks {
 	background: #7f7f7f;
@@ -1529,10 +1544,34 @@ a.solarPumping:hover .greenBox .greenArrow {
 }
 .otherLinks {
 	background: #666;
-	min-height: 123px;
+	min-height: 136px;
 }
 
 /* home icons*/
 .homeIco {
-	
+	padding: 0;
+}
+.homeIco li a {
+	color: #fff;
+	text-shadow: none;
+	padding: 0
+}
+.homeIco li {
+	/*width: 138px;*/
+	/*width: 162px;*/
+	width: 152px;
+	float: left;
+	margin-bottom: 8px;
+}
+.homeIco > li > a:hover {
+	background: none;
+}
+li.setWidth {
+	width: 362px;
+}
+li.setWidth2 {
+	width: 173px;
+}
+.cycle-slideshow img {
+	height: 584px;
 }
