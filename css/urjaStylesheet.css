@@ -745,11 +745,24 @@ address > span {
 	display: inline-block;
 	margin: 0 0 -60px 12px;
 }
+.icon16 {
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	margin: 0;
+	float: left;
+	/*line-height: 57px;*/
+	margin-top: 6px;
+}
 .urjaAdvantage #icon6 {
 	background: url("../images/Urja_sprite.png") 0 -261px no-repeat;
 }
-.urjaAdvantage > h2 > a:hover > #icon6 {
-	background: url("../images/Urja_sprite.png") -60px -261px no-repeat;
+.icon16 {
+	background: url("../images/icon16.png") 0 0 no-repeat;
+}
+.urjaAdvantage > h2 > a:hover > #icon6, 
+.urjaAdvg > a:hover > .icon16 {
+	background: url("../images/icon16_hover.png") 0 -0 no-repeat;
 }
 .asideFooter {
 	background-color: #666666;
@@ -776,20 +789,39 @@ address > span {
 	padding: 0 0 0 0;
 	margin: -8px 0 0 60px;
 }
+.measureCons a span {
+height: 25px;
+	display: inline-block;
+	/*font-family: "Century Gothic";*/
+	font-size: 14px;
+	font-weight: normal;
+	color: #ffcc33;
+	padding: 0 0 0 0;
+	float: left;
+	/*margin: -8px 0 0 60px;*/
+	/*margin: -8px 0 0 60px;*/
+}
 .asideFooter .energyCon > h2 > a:hover > h3 {
 	color: #ffcc33;
 	text-decoration: underline;
 }
-#icon7 {
+#icon7, .icon17 {
 	width: 37px;
 	height: 37px;
 	display: inline-block;
 	margin: 3px 0 -47px 15px;
 }
-.asideFooter .energyCon #icon7 {
+.icon17 {
+	margin: 0;
+	float: left;
+	margin-right: 5px;
+}
+.asideFooter .energyCon #icon7, 
+.icon17 {
 	background: url("../images/Urja_sprite.png") 0 -219px no-repeat;
 }
-.asideFooter .energyCon > h2 > a:hover > #icon7 {
+.asideFooter .energyCon > h2 > a:hover > #icon7,
+.measureCons a:hover .icon17 {
 	background: url("../images/Urja_sprite.png") -40px -219px no-repeat;
 }
 .asideFooter .nav {
@@ -1541,6 +1573,22 @@ a.solarPumping:hover .greenBox .greenArrow {
 	box-shadow: 0 3px 3px rgba(35,31,32,.4);
 	position: relative;
 }
+.urjaAdvg a {
+	display: inline-block;
+	margin-left: 20px;
+}
+.urjaAdvg a span {
+	display: inline-block;
+	float: left;
+	text-transform: uppercase;
+	font-size: 20px;
+	line-height: 56px;
+	font-style: italic;
+	color: #ffcc33;
+}
+.urjaAdvg a:hover span {
+	text-decoration: underline;
+}
 .allIcons {
 	/*min-height: 136px;*/
 	min-height: 123px;
@@ -1555,6 +1603,11 @@ a.solarPumping:hover .greenBox .greenArrow {
 	float: left;
 	height: 50px;
 	width: 224px;	
+}
+.measureCons {
+	width: 214px;
+	padding: 10px 0 0 10px;
+	height: 40px;
 }
 .otherLinks {
 	background: #666;
