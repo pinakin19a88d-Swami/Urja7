@@ -10,10 +10,10 @@ html, body, div, a, h1, h2, h3, h4, h5, h6, p, img, dl,
   	border: 0;
 
   	-webkit-transition: color 0.2s linear;
-		-moz-transition: color 0.2s linear;
-		-o-transition: color 0.2s linear;
-		-ms-transition: color 0.2s linear;
-		transition: color 0.2 linear;
+	   -moz-transition: color 0.2s linear;
+	     -o-transition: color 0.2s linear;
+	    -ms-transition: color 0.2s linear;
+	        transition: color 0.2s linear;
 }
 /* ---------- Commmon styles ---------- */
 body {
@@ -302,28 +302,28 @@ address  a:hover {
 	text-shadow: none;
 }
 .subNav {
-	box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-
 	-webkit-animation-duration: 0.5s;
-  -webkit-animation-delay: 0s;
-  -webkit-animation-iteration-count: 1;
-  -moz-animation-duration: 0.5s;
-  -moz-animation-delay: 0s;
-  -moz-animation-iteration-count: 1;
-  -o-animation-duration: 0.5s;
-  -o-animation-delay: 0s;
-  -o-animation-iteration-count: 1;
-  -ms-animation-duration: 0.5s;
-  -ms-animation-delay: 0s;
-  -ms-animation-iteration-count: 1;
+	-webkit-animation-delay: 0s;
+	-webkit-animation-iteration-count: 1;
+	-moz-animation-duration: 0.5s;
+	-moz-animation-delay: 0s;
+	-moz-animation-iteration-count: 1;
+	-o-animation-duration: 0.5s;
+	-o-animation-delay: 0s;
+	-o-animation-iteration-count: 1;
+	-ms-animation-duration: 0.5s;
+	-ms-animation-delay: 0s;
+	-ms-animation-iteration-count: 1;
 }
 .nav > li > .subNav {
 	position: absolute;
-  list-style: none;
-  font-size: 12px;
-  background-color: #d6d6d6;
-  margin: 0 0 0 -10px;
-  display: none;
+	list-style: none;
+	font-size: 12px;
+	background-color: #cccccc;
+	background-color: rgba(204,204,204,0.8);
+	box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+	margin: 0 0 0 -10px;
+	display: none;
 }
 .nav > li:hover > ul {
 	display: block;

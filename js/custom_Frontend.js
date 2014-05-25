@@ -25,6 +25,15 @@ $(document).ready(function(){
 		$("#blogNav, #blogFtNav").parent().addClass("active");
 	});
 
+
+	// ---------- Consecutive Pages AJAX Fuctions ----------
+	$("#blogPage2").click(function(){
+		alert("yes its working");
+		$("#bodyContent").load("ajax/blog2Ajax.html");
+		$("ul > li").removeClass("active");
+		$("#blogNav, #blogFtNav").parent().addClass("active");
+	});
+
 	// ---------- Side Navigation AJAX Fuctions ----------
 	$("#energyNav, #energySideNav, #energySideNav > a").click(function(){
 		$("#bodyContent").load("ajax/energyAjax.html");
