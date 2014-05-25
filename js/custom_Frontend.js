@@ -27,8 +27,7 @@ $(document).ready(function(){
 
 
 	// ---------- Consecutive Pages AJAX Fuctions ----------
-	$("#blogPage2").click(function(){
-		alert("yes its working");
+	$("#arrowPage2").click(function(){
 		$("#bodyContent").load("ajax/blog2Ajax.html");
 		$("ul > li").removeClass("active");
 		$("#blogNav, #blogFtNav").parent().addClass("active");

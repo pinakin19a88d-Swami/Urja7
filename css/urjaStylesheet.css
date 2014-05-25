@@ -984,7 +984,15 @@ height: 25px;
 	width: 571px;
 	height: 200px;
 	margin: 10px 0 10px 0;
+	background-image: url("../images/aboutUsBanner.jpg");
+	background-repeat: no-repeat;
 }
+/*.aboutUsBanner{
+	width: 571px;
+	height: 200px;
+	margin: 10px 0 10px 0;
+	
+}*/
 #aboutPage > .blueHeading {
 	font-weight: bold;
 	font-size: 14px;
@@ -1096,41 +1104,69 @@ height: 25px;
 
 /* ---------- Blog Styling ---------- */
 
-.aboutUsBanner{
-	width: 571px;
-	height: 200px;
-	margin: 10px 0 10px 0;
-	background-image: url("../images/aboutUsBanner.jpg");
-	background-repeat: no-repeat;
+.headingSection {
+	width: 585px;
+	height: 225px;
+	background-color: #dbdbdb;
+	text-align: justify;
+	letter-spacing: 0.2px;
+	line-height: 18px;
+	overflow: hidden;
 }
-.blogHeading, .mainBody > #blogPage1 > h1 {
+.blogHeading {
+	display: inline-block;
+	font-weight: 600;
+	font-size: 34px;
+	color: #336600;
+	text-transform: uppercase;
+	border-bottom: #bbbbbb solid 2px;
+	padding: 10px 0 5px 20px;
+}
+.blogHeading > span {
+	color: #666666;
+}
+.redText {
+	color: #990000;
+	font-size: 15px;
+	padding: 10px;
+}
+.whiteText {
+	background-color: #154315;
+	color: #ffffff;
+	font-size: 13px;
+	padding: 10px;
+	bottom: 0;
+}
+
+/*.blogHeading, .mainBody > #blogPage1 > h1 {
 	font-weight: bold;
 	font-size: 34px;
 	color: #669933;
 	text-transform: uppercase;
 	letter-spacing: .2px;
-}
-.greenPara {
+}*/
+.blogPara {
 	display: inline-block;
 	width: 280px;
-	margin-top: 20px;
+	margin-top: 10px;
 	/*font-family: "Century Gothic";*/
 	font-size: 12px;
 	font-weight: normal;
-	letter-spacing: .2px;
+	text-align: justify;
+	letter-spacing: 0.2px;
 	line-height: 18px;
 	padding: 0 20px 0 0px;
-	color: #666666;
+	color: #333333;
 	float: left;
 }
-.greenPara > .paraBullet {
+.blogPara > .paraBullet {
 	font-family: "Webdings";
 	font-size: 10px;
 	color: #0066cc;
 }
 .blogImage1 {
 	display: inline-block;
-	margin-top: 20px;
+	margin: 20px 0 0 5px;
 }
 .imageCaption {
 	display: block;
@@ -1160,17 +1196,18 @@ height: 25px;
 	float: left;
 	margin: 0 0 20px 0;
 }
-.nextPage {
+.nextArrow {
+	position: absolute;
 	width: 22px;
 	height: 16px;
 	background-image: url("../images/nextPageArrow.png");
 	background-repeat: no-repeat;
-	float: right;
-	margin: 20px 10px 0 0;
+	right: 260px;
+	bottom: 10px;
 	cursor: pointer;
 }
 
-/* ----- for all SideNav pages -----*/
+/* ----- for all SideNav pages ----- */
 #bp1, #bp2, #bp3, #bp4 {
 	margin: 0 0 20px 0;
 }
