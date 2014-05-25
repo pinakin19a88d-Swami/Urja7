@@ -45,7 +45,7 @@ i.bullet {
 	width: 12px;
 	height: 12px;
 	display: inline-block;
-	margin: 2px 0 0 0;
+	margin: 2px 5px 0 0;
 	background: url("../images/Urja_sprite.png") 0 0 no-repeat;
 }
 ul {
@@ -878,11 +878,11 @@ height: 25px;
 .mainBody > #communityPage > p,
 .mainBody > #businessPage > p {
 	width: 571px;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: normal;
 	text-align: justify;
 	letter-spacing: .2px;
-	line-height: 16px;
+	line-height: 18px;
 	color: #666666;
   margin: 0 0 10px 0;
 }
@@ -1222,11 +1222,11 @@ height: 25px;
 #energyPage > .bulletPts > ul > li > p {
 	width: 571px;
 	/*font-family: "Century Gothic";*/
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: normal;
 	text-align: justify;
 	letter-spacing: .2px;
-	line-height: 16px;
+	line-height: 18px;
 	color: #666666;
   	margin: 0 0 10px 0;
 }
@@ -1262,11 +1262,11 @@ height: 25px;
 .mainBody > #pumpingPage > p,
 #pumpingPage > .bulletPts > ul > li > p {
 	width: 571px;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: normal;
 	text-align: justify;
 	letter-spacing: .2px;
-	line-height: 16px;
+	line-height: 18px;
 	color: #666666;
   	margin: 0 0 10px 0;
 }
@@ -1302,11 +1302,11 @@ height: 25px;
 .mainBody > #optPage > p,
 #optPage > .bulletPts > ul > li > p {
 	width: 571px;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: normal;
 	text-align: justify;
 	letter-spacing: .2px;
-	line-height: 16px;
+	line-height: 18px;
 	color: #666666;
  	margin: 0 0 10px 0;
 }
@@ -1349,11 +1349,11 @@ height: 25px;
 .mainBody > #productPage > p,
 #productPage > .bulletPts > ul > li > p {
 	width: 571px;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: normal;
 	text-align: justify;
 	letter-spacing: .2px;
-	line-height: 16px;
+	line-height: 18px;
 	color: #666666;
 	margin: 0 0 4px 0;
 }
@@ -1649,4 +1649,35 @@ li.setWidth2 {
 }
 .cycle-slideshow img {
 	height: 584px;
+}
+/* carrers Form*/
+.carrersForm {
+	margin-top: 30px;
+}
+.carrersForm label {
+	color: #666;
+} 
+input[type="text"] {
+	background: #ccc;
+	-webkit-box-shadow: inset 0 0 3px rgba(35,31,32,.45); 
+	   -moz-box-shadow: inset 0 0 3px rgba(35,31,32,.45); 
+	     -o-box-shadow: inset 0 0 3px rgba(35,31,32,.45); 
+		    box-shadow: inset 0 0 3px rgba(35,31,32,.45); 
+	width: 208px; 
+	height: 24px;
+	border: none;
+	border-radius: 0;
+}
+textarea {
+	background: #ccc;
+	-webkit-box-shadow: inset 0 0 3px rgba(35,31,32,.45); 
+	   -moz-box-shadow: inset 0 0 3px rgba(35,31,32,.45); 
+	     -o-box-shadow: inset 0 0 3px rgba(35,31,32,.45); 
+		    box-shadow: inset 0 0 3px rgba(35,31,32,.45); 
+	border: none;
+	border-radius: 0;
+}
+.form-horizontal .control-label {
+	width: 180px;
+	text-align: left;
 }
