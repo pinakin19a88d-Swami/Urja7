@@ -1125,6 +1125,9 @@ height: 25px;
 .blogHeading > span {
 	color: #666666;
 }
+.RsrcHeading > span {
+	color: #660000;
+}
 .redText {
 	color: #990000;
 	font-size: 15px;

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Urja Future Systems</title>
+		<link rel="icon" type="image/png" href="images/UrjaLogoIcon.png">
+		<link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/bootstrap.css"  type="text/css"/>
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/urjaStylesheet.css"  type="text/css"/>
+	
+		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="js/custom_Frontend.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+				$("#bodyContent").load("ajax/resource1.html");
+				$("ul > li").removeClass("active");
+				$("#resourceNav").parent().addClass("active");
+			
+			});
+		</script>
+	</head>
+
+	<body>
+	<div class="pageWrapper">
+
+			<div class="header">			
+				<div class="navbar navbar-static-top">
+		            <div class="navbar-inner">
+		              <div class="container">
+		              	<a href="#" class="animated fadeIn companyLogo">Company Logo</a>   
+		                <ul class="nav">
+		                  <li><a href="index.html">Home</a></li>
+		                  <li><a id="aboutNav" href="#">About Us</a>
+		                  	<ul class="subNav animated fadeInDown">
+		                  		<li><a id="certNav" href="">Certification</a></li>
+		                  	</ul>
+		                  </li>
+		                  <li><a href="#">Clean Energy</a>
+		                  	<ul class="subNav animated fadeInDown">
+		                  		<li><a id="energyNav" href="#">Solar Energy</a></li>
+		                  		<li><a id="pumpingNav" href="#">Solar Pumping</a></li>
+		                  		<li><a id="optNav" href="#">Energy Optimization</a></li>
+		                  		<li><a id="productNav" href="#">Solar Product</a></li>
+		                  	</ul>
+		                  </li>
+		                  <li><a id="resourceNav" href="#">Resource Base</a></li>
+		                  <li><a id="careersNav" href="#">Careers</a></li>
+		                  <li><a id="contactNav" href="#">Contact</a>
+		                  	<ul class="subNav animated fadeInDown">
+		                  		<li><a id="networkNav" href="">Network Coverage</a></li>
+		                  	</ul>
+		                  </li>
+		                  <li><a id="blogNav" href="#">Blog<i id="blogIcon"></i></a></li>
+		                </ul>
+		              </div> <!-- container -->
+		            </div> <!-- navbar-inner -->
+	          	</div>	<!-- navbar -->			
+			</div><!-- header -->
+			<div class="container whiteBG positionRelative">
+				<div class="row tstImg">
+					<div class="span1 sidenav">
+						<ul class="animated fadeInLeft">
+							<li class="textVertical blueBG" id="energySideNav"><a href="#">Solar Energy</a></li>
+							<li class="textVertical greenBG" id="pumpingSideNav"><a href="#">Solar Pumping</a></li>
+							<li class="textVertical khakiBG" id="optSideNav"><a href="#">Energy Optimisation</a></li>
+							<li class="textVertical orangeBG" id="productSideNav"><a href="#">Solar Product</a></li>
+						</ul>
+					</div><!-- span1 -->
+
+					<div class="span8 mainBody" id="bodyContent">
+						
+					</div><!-- span8 mainBody -->
+					<div class="nextArrow animated fadeInLeft de8ms" id="arrowPage2"></div>
+
+					<div class="span3 aside">
+						<ul class="nav nav-list iconBtn">
+						    <li><a href="#" id="aside1"><i id="icon1"></i>Households</a></li>
+						    <li><a href="#" id="aside2"><i id="icon2"></i>Farmers &amp; Landowners</a></li>
+						    <li><a href="#" id="aside3"><i id="icon3"></i>Communities</a></li>
+						    <li><a href="#" id="aside4"><i id="icon4"></i>Businesses</a></li>
+						    <li><a href="#" id="aside5"><i id="icon5"></i>Public Voluntary Sector</a></li>
+						</ul>
+						<div class="urjaAdvantage">
+							<h2><a href="#" id="aside6"><i id="icon6"></i><h3>UrjaFuture</h3><h3>Advantage</h3></a></h2>
+						</div>
+						<div class="asideFooter">
+							<div class="energyCon">
+								<h2><a href="#" id="aside7"><i id="icon7"></i><h3>Measure Your</h3><h3>Energy Consumption</h3></a></h2>
+							</div>
+							<ul class="nav nav-list footerList">
+								<li><a href="#">News on Projects</a></li>
+								<li><a href="#">Testimonials</a></li>
+								<li><a href="#">Photographs</a></li>
+								<li><a href="#">New Products &#47; Contracts</a></li>
+								<li><a href="#">Our Customers</a></li>
+							</ul>
+						</div>
+					</div><!-- span3 -->
+				</div><!-- row -->
+
+			</div><!-- container -->
+			
+			<div class="footerWrapper">
+				<div class="servicesNav">
+					<ul>
+						<li><a href="#">Project Planning</a></li>
+						<div class="navDivision"></div>
+						<li><a href="#">Research</a></li>
+						<div class="navDivision"></div>
+						<li><a href="#">Feasibility Studies</a></li>
+						<div class="navDivision"></div>
+						<li><a href="#">Documentation</a></li>
+						<div class="navDivision"></div>
+						<li><a href="#">On-field Implementation</a></li>
+						<div class="navDivision"></div>
+						<li><a href="#">Service Back-ups</a></li>
+						<div class="navDivision"></div>
+						<li><a href="#">Reliability</a></li>
+						<div class="navDivision"></div>
+						<li><a href="#">Training</a></li>
+						<div class="navDivision"></div>
+						<li><a href="#">Consultancy</a></li>
+					</ul>
+				</div>
+				<div class="navbar-static-bottom footerNavbar">
+		            <div class="navbar-inner footerNavbar-inner">
+						<div class="container">
+							<ul class="nav nav-list footerNav">
+								<li><a href="index.html">Home</a></li>
+								<li><a id="aboutFtNav" href="#">About Us</a></li>
+								<li><a href="#">Clean Energy</a></li>
+								<li><a id="resourceFtNav" href="#">Resource Base</a></li>
+							</ul>
+							<ul class="nav nav-list footerNav">
+								<li><a id="careersFtNav" href="#">Careers</a></li>
+								<li><a id="contactFtNav" href="#">Contact</a></li>
+								<li><a id="blogFtNav" href="#">Blog</a></li>
+							</ul>
+							<address>
+								<span>Urjafuture Systems (I) Pvt Ltd</span>
+								<br/>Modi baug, Ganeshkhind Road, Shivajinagar,
+								<br/>Pune 411 002
+								<br/>Telefax: +91 20-24475025 / 24430051, 
+								<br/>Mobile: 9665042105, 
+								<br/>E-mail:<a href="mailto:sales@urjafuture.in">sales@urjafuture.in</a>, Website:<a href="http://www.urjafuture.in">www.urjafuture.in</a>
+							</address>
+							<div class="socialSprites">
+								<a href=""><i class="facebook"></i></a>
+								<a href=""><i class="twitter"></i></a>
+								<a href=""><i class="googlePlus"></i></a>
+								<a href=""><i class="linkedIn"></i></a>
+							</div>
+						</div> <!-- container -->
+		            </div> <!-- footerNavbar-inner -->
+		            <div class="copyright">
+		          		<p>All rights Reserved by Urja Future_2014</p>
+		          		<p>Web Site Developed by - <a href="http://inspiremultimedia.co.in">Inspiremultimedia.co.in</a></p>
+	          		</div>
+	          	</div>	<!-- footerNavbar -->
+			</div> <!-- footerWrapper -->
+	</div><!-- pageWrapper -->
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	</body>
+</html>
