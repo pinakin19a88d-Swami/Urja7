@@ -709,7 +709,6 @@ address > span {
 	text-shadow: none;
 	padding: 0;
 	margin: 0;
-	height: 36px;
 }
 .aside .nav > li > a:hover, 
 .aside .nav > li > a:focus {
@@ -722,28 +721,23 @@ address > span {
 	margin: 25px 0 0 0;
 }
 .urjaAdvantage > h2 > a {
-	position: absolute;
-	text-decoration: none;
-	margin: -20px 0 0 0;
-}
-.urjaAdvantage > h2 > a > h3 {
-	height: 25px;
-	display: block;
-	/*font-family: "Century Gothic";*/
+	display: inline-block;
 	font-size: 15px;
 	font-weight: bold;
 	font-style: italic;
 	text-transform: uppercase;
+	text-decoration: none;
 	letter-spacing: 1.8px;
+	line-height: 18px;
 	color: #f03f45;
-	padding: 0 0 0 0;
-	margin: -5px 0 0 80px;
+	margin: 20px 0 0 10px;
 }
 #icon6 {
 	width: 57px;
 	height: 57px;
 	display: inline-block;
-	margin: 0 0 -60px 12px;
+	margin: -10px 10px 0 0;
+	float: left;
 }
 .icon16 {
 	width: 40px;
@@ -760,7 +754,9 @@ address > span {
 .icon16 {
 	background: url("../images/icon16.png") 0 0 no-repeat;
 }
-.urjaAdvantage > h2 > a:hover > #icon6, 
+.urjaAdvantage > h2 > a:hover > #icon6 {
+	background: url("../images/Urja_sprite.png") -60px -261px no-repeat;	
+} 
 .urjaAdvg > a:hover > .icon16 {
 	background: url("../images/icon16_hover.png") 0 -0 no-repeat;
 }
@@ -775,19 +771,15 @@ address > span {
 	box-shadow: 0 3px 3px rgba(35, 31, 32, 0.30);
 }
 .asideFooter .energyCon > h2 > a {
-	position: absolute;
+	width: 185px;
 	text-decoration: none;
-	margin: -32px 0 0 5px;
-}
-.asideFooter .energyCon > h2 > a > h3 {
-	height: 25px;
-	display: block;
-	/*font-family: "Century Gothic";*/
+	display: inline-block;
 	font-size: 14px;
 	font-weight: normal;
+	line-height: 18px;
 	color: #ffcc33;
-	padding: 0 0 0 0;
-	margin: -8px 0 0 60px;
+	margin: 0px 0px 0px 15px;
+	padding: 8px 0px 0px 0px;
 }
 .measureCons a span {
 height: 25px;
@@ -809,7 +801,8 @@ height: 25px;
 	width: 37px;
 	height: 37px;
 	display: inline-block;
-	margin: 3px 0 -47px 15px;
+	margin: 0 10px 0 0;
+	float: left;
 }
 .icon17 {
 	margin: 0;
@@ -830,6 +823,12 @@ height: 25px;
 .asideFooter .nav > li {
 	height: 25px;
 	margin: 0 0 0 10px;
+}
+.asideFooter .footerList > li {
+	margin-top: 10px;
+}
+.asideFooter .footerList > li:first-child {
+	margin-top: 0;
 }
 .asideFooter .footerList > li > a {
 	margin: 10px 0 0 10px;
@@ -1654,6 +1653,7 @@ a.solarPumping:hover .greenBox .greenArrow {
 	line-height: 56px;
 	font-style: italic;
 	color: #ffcc33;
+	margin: 0 0 0 10px;
 }
 .urjaAdvg a:hover span {
 	text-decoration: underline;
@@ -1684,6 +1684,12 @@ a.solarPumping:hover .greenBox .greenArrow {
 	min-height: 111px;
 	padding: 25px 0 0 46px;
 	width: 178px;
+}
+.otherLinks > .footerList > li {
+	margin-top: 12px;
+}
+.otherLinks > .footerList > li:first-child {
+	margin-top: 0;
 }
 
 /* home icons*/
