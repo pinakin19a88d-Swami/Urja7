@@ -1807,3 +1807,7 @@ margin-right: 10px;
 	background: #e4d07f;
 	color: #003300;
 }
+.baseWrap img{
+	display: block;
+	margin-bottom: 10px;
+}
