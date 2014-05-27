@@ -1106,7 +1106,7 @@ height: 25px;
 
 .headingSection {
 	width: 585px;
-	height: 225px;
+	height: 222px;
 	background-color: #dbdbdb;
 	text-align: justify;
 	letter-spacing: 0.2px;
@@ -1183,18 +1183,21 @@ height: 25px;
 }
 .blogLinks {
 	/*font-family: "Century Gothic";*/
-	font-size: 12px;
 	font-weight: normal;
-	font-style: italic;
 	letter-spacing: .2px;
-	line-height: 16px;
+}
+.blogLinks > h4 {
+	font-size: 14px;
+	color: #0033cc;
+	margin: 0 0 10px 0;
 }
 .blogLinks > a {
 	display: inline-block;
-	width: 435px;
-	color: #003366;
-	float: left;
-	margin: 0 0 20px 0;
+	/*width: 435px;*/
+	color: #000000;
+	font-size: 12px;
+	line-height: 20px;
+	margin: 0 0 5px 0;
 }
 .nextArrow {
 	position: absolute;
@@ -1205,6 +1208,32 @@ height: 25px;
 	right: 260px;
 	bottom: 10px;
 	cursor: pointer;
+}
+
+.sochiSection {
+	width: 597px;
+	height: 182px;
+}
+.sochiHeading {
+	font-size: 28px;
+	line-height: 30px;
+	padding: 10px 20px 15px 20px;
+}
+.sochiHeading > span {
+	font-size: 22px;
+}
+.sochiRed {
+	font-size: 24px;
+}
+.sochiImage {
+	margin: 0 0 0 0;
+}
+.sochiPara, .sochiThumbs, .sochiThumbsList {
+	width: auto;
+	float: none;
+}
+.sochiThumbs {
+	margin: 20px 0 20px 0;
 }
 
 /* ----- for all SideNav pages ----- */
