@@ -1105,7 +1105,7 @@ height: 25px;
 
 .headingSection {
 	width: 585px;
-	height: 222px;
+	/*height: 222px;*/
 	background-color: #dbdbdb;
 	text-align: justify;
 	letter-spacing: 0.2px;
@@ -1126,6 +1126,11 @@ height: 25px;
 }
 .RsrcHeading > span {
 	color: #660000;
+}
+.RsrcHeading {
+	color: #666666;
+	font-weight: normal;
+	padding: 10px 0 0px 10px;
 }
 .redText {
 	color: #990000;
@@ -1149,17 +1154,29 @@ height: 25px;
 }*/
 .blogPara {
 	display: inline-block;
-	width: 280px;
+	width: 240px;
 	margin-top: 10px;
 	/*font-family: "Century Gothic";*/
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: normal;
 	text-align: justify;
 	letter-spacing: 0.2px;
 	line-height: 18px;
-	padding: 0 20px 0 0px;
+	padding: 0 20px;
 	color: #333333;
 	float: left;
+}
+.contentReso {
+
+
+	margin-top: 10px;
+	padding: 0 20px;
+	font-size: 14px;
+	font-weight: normal;
+	text-align: justify;
+	letter-spacing: 0.2px;
+	line-height: 18px;
+	color: #333333;
 }
 .blogPara > .paraBullet {
 	font-family: "Webdings";
@@ -1769,4 +1786,24 @@ width: 75px;
 height: 25px;
 float: left;
 margin-right: 10px;
+}
+
+/* Resource base*/
+.contentWrap {
+	width: 600px;
+
+}
+.leftContent, .rightContent {
+	width: 300px;
+	float: left;
+}
+.greyBgTxt, .yellowBgTxt {
+	background: #ccc;
+	color: #330000;
+	padding: 10px 5px 10px 20px;
+	margin: 5px 0;
+}
+.yellowBgTxt {
+	background: #e4d07f;
+	color: #003300;
 }
