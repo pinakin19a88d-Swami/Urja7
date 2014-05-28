@@ -1507,10 +1507,10 @@ a.solarEnergy, a.energyOpti, a.solarPumpingText,  a.solarPumping {
 	float: left;
 	position: relative;
 
-	transition:All 0.5s;
-			-moz-transition:All 0.5s;
-			-o-transition:All 0.5s;
-			-webkit-transition:All 0.5s;
+	transition:All 1s;
+			-moz-transition:All 1s;
+			-o-transition:All 1s;
+			-webkit-transition:All 1s;
 }
  a.solarPumping {
  	float: right;
@@ -1532,11 +1532,32 @@ a.solarPumping:hover .greenBox .linkText span.white {
 }
 .blueBox .linkText {
 	padding: 88px 0 0 12px;
+	transition:All 1s;
+			-moz-transition:All 1s;
+			-o-transition:All 1s;
+			-webkit-transition:All 1s;
+}
+a.solarEnergy:hover .blueBox .linkText {
+	padding: 110px 0 0 12px;
 }
 .yellowOchreBox .linkText {
 	padding: 40px 0 0 5px;
+	transition:All 1s;
+			-moz-transition:All 1s;
+			-o-transition:All 1s;
+			-webkit-transition:All 1s;
+}
+a.energyOpti:hover .yellowOchreBox .linkText {
+	padding: 70px 0 0 5px;
 }
 .greenBox .linkText {
+	padding: 80px 0 0 30px;
+	transition:All 1s;
+			-moz-transition:All 1s;
+			-o-transition:All 1s;
+			-webkit-transition:All 1s;
+}
+a.solarPumping:hover .greenBox .linkText {
 	padding: 110px 0 0 30px;
 }
 .blueBox .linkText span, 
