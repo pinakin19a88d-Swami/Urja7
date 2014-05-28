@@ -251,9 +251,9 @@ ul {
 
 .de29ms {  -webkit-animation-delay: 2.9s;
 							 -moz-animation-delay: 2.9s;
-								-ms-animation-delay: 2.9s;
-								 -o-animation-delay: 2.9s;
-										animation-delay: 2.9s; 
+							  -ms-animation-delay: 2.9s;
+							   -o-animation-delay: 2.9s;
+								  animation-delay: 2.9s; 
 									}
 
 .de3s { -webkit-animation-delay: 3s; }
@@ -378,10 +378,10 @@ address  a:hover {
   margin-left: -5px;
 
 	-webkit-transition:width 1s linear 2s;
-	-moz-transition:width 1s linear 2s;
-	-o-transition:width 1s linear 2s;
-	-ms-transition:width 1s linear 2s;
-	transition: width 1s linear 2s;
+	   -moz-transition:width 1s linear 2s;
+		 -o-transition:width 1s linear 2s;
+		-ms-transition:width 1s linear 2s;
+		   transition: width 1s linear 2s;
 }
 .sidenav ul > li {
   width: 150px;
@@ -446,20 +446,20 @@ address  a:hover {
 .khakiBG,
 .orangeBG {
 	-webkit-transition: background-color 0.2s linear;
-	-moz-transition: background-color 0.2s linear;
-	-o-transition: background-color 0.2s linear;
-	-ms-transition: background-color 0.2s linear;
-	transition: background-color 0.2 linear;
+	   -moz-transition: background-color 0.2s linear;
+		 -o-transition: background-color 0.2s linear;
+		-ms-transition: background-color 0.2s linear;
+			transition: background-color 0.2s linear;
 }
 .blueBG:before,
 .greenBG:before,
 .khakiBG:before,
 .orangeBG:before {
 	-webkit-transition: border-color 0.2s linear;
-	-moz-transition: border-color 0.2s linear;
-	-o-transition: border-color 0.2s linear;
-	-ms-transition: border-color 0.2s linear;
-	transition: border-color 0.2 linear;
+	   -moz-transition: border-color 0.2s linear;
+		 -o-transition: border-color 0.2s linear;
+		-ms-transition: border-color 0.2s linear;
+			transition: border-color 0.2s linear;
 }
 .blueBG:hover,
 .greenBG:hover,
@@ -762,8 +762,6 @@ address > span {
 }
 .asideFooter {
 	background-color: #666666;
-	/*min-height: 630px;*/
-	/*box-shadow: -5px 0 4px rgba(35, 31, 32, 0.34);*/
 }
 .asideFooter .energyCon {
 	height: 52px;
@@ -782,7 +780,7 @@ address > span {
 	padding: 8px 0px 0px 0px;
 }
 .measureCons a span {
-height: 25px;
+	height: 25px;
 	display: inline-block;
 	/*font-family: "Century Gothic";*/
 	font-size: 14px;
@@ -790,8 +788,6 @@ height: 25px;
 	color: #ffcc33;
 	padding: 0 0 0 0;
 	float: left;
-	/*margin: -8px 0 0 60px;*/
-	/*margin: -8px 0 0 60px;*/
 }
 .asideFooter .energyCon > h2 > a:hover > h3 {
 	color: #ffcc33;
@@ -970,12 +966,6 @@ height: 25px;
 	text-align: center;
 	margin: 10px 0 0 0;
 }
-/* community page*/
-/*#communityPage > .householdBanner{
-	width: 571px;
-	height: 200px;
-	margin: 10px 0 10px 0;
-}*/
 
 /* ---------- About Us Styling ---------- */
 
@@ -986,12 +976,6 @@ height: 25px;
 	background-image: url("../images/aboutUsBanner.jpg");
 	background-repeat: no-repeat;
 }
-/*.aboutUsBanner{
-	width: 571px;
-	height: 200px;
-	margin: 10px 0 10px 0;
-	
-}*/
 #aboutPage > .blueHeading {
 	font-weight: bold;
 	font-size: 14px;
@@ -1119,7 +1103,7 @@ height: 25px;
 	color: #336600;
 	text-transform: uppercase;
 	border-bottom: #bbbbbb solid 2px;
-	padding: 10px 0 5px 20px;
+	padding: 10px 10px 5px 20px;
 }
 .blogHeading > span {
 	color: #666666;
@@ -1139,14 +1123,6 @@ height: 25px;
 	padding: 10px;
 	bottom: 0;
 }
-
-/*.blogHeading, .mainBody > #blogPage1 > h1 {
-	font-weight: bold;
-	font-size: 34px;
-	color: #669933;
-	text-transform: uppercase;
-	letter-spacing: .2px;
-}*/
 .blogPara {
 	display: inline-block;
 	width: 280px;
@@ -1448,10 +1424,10 @@ height: 25px;
 	float: left;
 	background: #2995dc;
 
+	-webkit-transition:All 1s;
+	   -moz-transition:All 1s;
+		 -o-transition:All 1s;
 			transition:All 1s;
-			-moz-transition:All 1s;
-			-o-transition:All 1s;
-			-webkit-transition:All 1s;
 }
 .blueBox {
 	-webkit-box-shadow: 4px 0 4px rgba(35,31,32,.34); 
@@ -1490,10 +1466,11 @@ a.solarEnergy, a.energyOpti, a.solarPumpingText,  a.solarPumping {
 	float: left;
 	position: relative;
 
-	transition:All 0.5s;
-			-moz-transition:All 0.5s;
-			-o-transition:All 0.5s;
-			-webkit-transition:All 0.5s;
+	-webkit-transition:All 0.5s;
+	   -moz-transition:All 0.5s;
+		 -o-transition:All 0.5s;
+		    transition:All 0.5s;
+			
 }
  a.solarPumping {
  	float: right;
@@ -1532,10 +1509,11 @@ a.solarPumping:hover .greenBox .linkText span.white {
 	word-spacing: 1px;
 	color: #10476b;
 
-		transition:All 1s;
-			-moz-transition:All 1s;
-			-o-transition:All 1s;
-			-webkit-transition:All 1s;
+	-webkit-transition:All 1s;
+	   -moz-transition:All 1s;
+		 -o-transition:All 1s;
+		    transition:All 1s;
+			
 }
 .yellowOchreBox .linkText span {
 	color: #523f19;
@@ -1573,16 +1551,17 @@ a.solarPumping:hover .greenBox .linkText span.white {
 	top: 10px;
 	width: 25px;
 	height: 39px;
-	transition:All 1s;
-			-moz-transition:All 1s;
-			-o-transition:All 1s;
-			-webkit-transition:All 1s;	
+	
+	-webkit-transition:All 1s;
+	   -moz-transition:All 1s;
+	     -o-transition:All 1s;
+	        transition:All 1s;
 }
 .blueArrow, .greenArrow,  .ochreArrow {
-	transition:All 1s;
-			-moz-transition:All 1s;
-			-o-transition:All 1s;
-			-webkit-transition:All 1s;
+	-webkit-transition:All 1s;
+	   -moz-transition:All 1s;
+	     -o-transition:All 1s;
+	        transition:All 1s;
 }
 .blueArrow {
 	background:url(../images/arrow_blue.png) no-repeat;
@@ -1662,7 +1641,6 @@ a.solarPumping:hover .greenBox .greenArrow {
 	/*min-height: 136px;*/
 	min-height: 123px;
 	background: #7f7f7f;
-	/*padding: 0 0 0 35px;*/
 	padding: 13px 0 0 35px;
 	width: 341px;
 	float: left;
