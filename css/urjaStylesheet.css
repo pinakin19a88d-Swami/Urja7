@@ -191,7 +191,11 @@ ul {
 										animation-delay: 1.9s; 
 									}																																				
 
-.de2s { -webkit-animation-delay: 2s; }
+.de2s { -webkit-animation-delay: 2s;
+							 -moz-animation-delay: 2s;
+								-ms-animation-delay: 2s;
+								 -o-animation-delay: 2s;
+										animation-delay: 2s; }
 
 .de21ms {  -webkit-animation-delay: 2.1s;
 							 -moz-animation-delay: 2.1s;
@@ -256,7 +260,11 @@ ul {
 								  animation-delay: 2.9s; 
 									}
 
-.de3s { -webkit-animation-delay: 3s; }
+.de3s { -webkit-animation-delay: 3s;
+							 -moz-animation-delay: 3s;
+								-ms-animation-delay: 3s;
+								 -o-animation-delay: 3s;
+										animation-delay: 3s; }
 .de4s { -webkit-animation-delay: 4s; }
 .de5s { -webkit-animation-delay: 5s; }
 
@@ -996,7 +1004,7 @@ address > span {
 .mainBody > #aboutPage > p {
 	width: 571px;
 	/*font-family: "Century Gothic";*/
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: normal;
 	text-align: justify;
 	letter-spacing: .2px;
