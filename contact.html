@@ -17,6 +17,8 @@
 				$("#bodyContent").load("ajax/contactAjax.html");
 				$("ul > li").removeClass("active");
 				$("#contactNav, #contactFtNav").parent().addClass("active");
+				$(".prevArrow").css("display","none");
+				$(".nextArrow").css("display","none");
 			
 			});
 		</script>
@@ -73,6 +75,8 @@
 					<div class="span8 mainBody" id="bodyContent">
 						
 					</div><!-- span8 mainBody -->
+					<div class="prevArrow animated fadeInRight de8ms" href="#"></div>
+					<div class="nextArrow animated fadeInLeft de8ms" href="#"></div>
 
 					<div class="span3 aside">
 						<ul class="nav nav-list iconBtn">

@@ -14,10 +14,158 @@
 		<script type="text/javascript">
 			$(document).ready(function(){
 
-				$("#bodyContent").load("ajax/blogAjax.html");
+				$("#bodyContent").load("ajax/blog1Ajax.html");
 				$("ul > li").removeClass("active");
 				$("#blogNav, #blogFtNav").parent().addClass("active");
-			
+				
+				$(".prevArrow").css("display","none");
+				$(".nextArrow").css("display","block");
+				
+				var currentPage = 1;
+				var pageId = "blog";
+
+				$(".prevArrow").click(function(){
+
+					if(currentPage == 1)
+					{
+						if(pageId == "blog")
+						{
+							$("#bodyContent").load("ajax/"+"blog"+currentPage.toString()+"Ajax.html");
+						}
+						else if(pageId == "resourceBase")
+						{
+							$("#bodyContent").load("ajax/"+"resource"+currentPage.toString()+"Ajax.html");
+						}
+					}
+					else if(currentPage == 2)
+					{
+						if(pageId == "blog")
+						{
+							currentPage -= 1;
+							$("#bodyContent").load("ajax/"+"blog"+currentPage.toString()+"Ajax.html");
+						}
+						else if(pageId == "resourceBase")
+						{
+							currentPage -= 1;
+							$("#bodyContent").load("ajax/"+"resource"+currentPage.toString()+"Ajax.html");
+						}
+					}
+					else if(currentPage == 3)
+					{
+						if(pageId == "blog")
+						{
+							currentPage -= 1;
+							$("#bodyContent").load("ajax/"+"blog"+currentPage.toString()+"Ajax.html");
+						}
+					}
+					
+					$("ul > li").removeClass("active");
+					$("#blogNav, #blogFtNav").parent().addClass("active");
+
+					if((currentPage == 2) && (pageId == "resourceBase"))
+					{
+						$(".prevArrow").css("display","block");
+						$(".nextArrow").css("display","none");
+					}
+					else if((currentPage == 2) && (pageId == "blog"))
+					{
+						$(".prevArrow").css("display","block");
+						$(".nextArrow").css("display","block");
+					}
+					else if((currentPage == 3) && (pageId == "blog"))
+					{
+						$(".prevArrow").css("display","block");
+						$(".nextArrow").css("display","none");
+					}
+					else if(currentPage == 1)
+					{
+						$(".prevArrow").css("display","none");
+						$(".nextArrow").css("display","block");
+					}
+
+				});
+
+				$(".nextArrow").click(function(){
+
+					if(currentPage == 1)
+					{
+						if(pageId == "blog")
+						{
+							currentPage += 1;
+							$("#bodyContent").load("ajax/"+"blog"+currentPage.toString()+"Ajax.html");
+						}
+						else if(pageId == "resourceBase")
+						{
+							currentPage += 1;
+							$("#bodyContent").load("ajax/"+"resource"+currentPage.toString()+"Ajax.html");
+						}
+					}
+					else if(currentPage == 2)
+					{
+						if(pageId == "blog")
+						{
+							currentPage += 1;
+							$("#bodyContent").load("ajax/"+"blog"+currentPage.toString()+"Ajax.html");
+						}
+						else if(pageId == "resourceBase")
+						{
+							$("#bodyContent").load("ajax/"+"resource"+currentPage.toString()+"Ajax.html");
+						}
+					}
+					else if(currentPage == 3)
+					{
+						if(pageId == "blog")
+						{
+							$("#bodyContent").load("ajax/"+"blog"+currentPage.toString()+"Ajax.html");
+						}
+					}
+					$("ul > li").removeClass("active");
+					$("#blogNav, #blogFtNav").parent().addClass("active");
+
+					if((currentPage == 2) && (pageId == "resourceBase"))
+					{
+						$(".prevArrow").css("display","block");
+						$(".nextArrow").css("display","none");
+					}
+					else if((currentPage == 2) && (pageId == "blog"))
+					{
+						$(".prevArrow").css("display","block");
+						$(".nextArrow").css("display","block");
+					}
+					else if((currentPage == 3) && (pageId == "blog"))
+					{
+						$(".prevArrow").css("display","block");
+						$(".nextArrow").css("display","none");
+					}
+					else if(currentPage == 1)
+					{
+						$(".prevArrow").css("display","none");
+						$(".nextArrow").css("display","block");
+					}
+
+				});
+				
+				$("#resourceNav, #resourceFtNav").click(function(){
+					currentPage = 1;
+					pageId = "resourceBase";
+					$("#bodyContent").load("ajax/resource1Ajax.html");
+					$("ul > li").removeClass("active");
+					$("#resourceNav, #resourceFtNav").parent().addClass("active");
+
+					$(".prevArrow").css("display","none");
+					$(".nextArrow").css("display","block");
+				});
+
+				$("#blogNav, #blogFtNav").click(function(){
+					currentPage = 1;
+					pageId = "blog";
+					$("#bodyContent").load("ajax/blog1Ajax.html");
+					$("ul > li").removeClass("active");
+					$("#blogNav, #blogFtNav").parent().addClass("active");
+
+					$(".prevArrow").css("display","none");
+					$(".nextArrow").css("display","block");
+				});
 			});
 		</script>
 	</head>
@@ -72,7 +220,8 @@
 					<div class="span8 mainBody" id="bodyContent">
 						
 					</div><!-- span8 mainBody -->
-					<div class="nextArrow animated fadeInLeft de8ms" id="arrowPage2"></div>
+					<div class="prevArrow animated fadeInRight de8ms" href="#"></div>
+					<div class="nextArrow animated fadeInLeft de8ms" href="#"></div>
 
 					<div class="span3 aside">
 						<ul class="nav nav-list iconBtn">
