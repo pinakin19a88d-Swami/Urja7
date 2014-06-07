@@ -44,7 +44,6 @@ $(document).ready(function(){
 		$("ul > li").removeClass("active");
 		$("#blogNav, #blogFtNav").parent().addClass("active");
 
-		alert("control is coming here");
 		$(".prevArrow").css("display","none");
 		$(".nextArrow").css("display","block");
 	});
