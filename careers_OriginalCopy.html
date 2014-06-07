@@ -9,12 +9,13 @@
 		<link rel="stylesheet" href="css/urjaStylesheet.css"  type="text/css"/>
 	
 		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="js/jquery.validate.js"></script>
 		<script type="text/javascript" src="js/custom_Frontend.js"></script>
 
 		<script type="text/javascript">
 			$(document).ready(function(){
 
-				$("#bodyContent").load("ajax/careersAjax.html");
+				$("#bodyContent").load("ajax/careersAjax_JQuery.html");
 				$("ul > li").removeClass("active");
 				$("#careersNav, #careersFtNav").parent().addClass("active");
 				$(".prevArrow").css("display","none");

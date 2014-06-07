@@ -1,0 +1,103 @@
+<div class="animated" id="businessPage">
+	<h2 class="animated fadeInDown blueHeading de2ms">Carrers</h2>
+	<p class="animated fadeInRight de4ms">
+		We are looking for young energetic, self-motivated and hardworking candidates for our expansion plans. If you want to be a part of our organisation please fill up the following form or mail your resume at 
+		<a href="mailto:hr@urjafuture.in">hr@urjafuture.in</a>
+	</p>
+
+	<script type="text/javascript">
+
+		$(function() {
+  
+	    // Setup form validation on the #register-form element
+	    $("#careers-form").validate({
+	    
+	        // Specify the validation rules
+	        rules: {
+	            inputPost: "required",
+	            inputName: "required",
+	            inputEdu: "required",
+	            inputExpertise: "required",
+	            inputExp: "required",
+	            inputAddrs: "required",
+	            inputPhone: {
+	                required: true,
+	                digits: true,
+	                minlength: 8
+	            },
+	            inputEmail: {
+	                required: true,
+	                email: true
+	            },
+	            inputSalary: {
+	                required: true,
+	                number: true,
+	                minlength: 4
+	            },
+	            inputResume: "required"
+	        },
+	        
+	        // Specify the validation error messages
+	        messages: {
+	            inputPost: "Please enter the Post you are applying for",
+	            inputName: "Please enter your full name",
+	            inputEdu: "Please enter your educational qualification",
+	            inputExpertise: "Please enter your area of expertise",
+	            inputExp: "Please enter your total experience",
+	            inputAddrs: "Please enter a valid address",
+	            inputPhone: "Please enter a valid telephone/mobile number",
+	            inputEmail: "Please enter a valid email address",
+	            inputSalary: "Please enter a valid salary in numbers only",
+	            inputResume: "Please enter your resume in valid format"
+	        },
+	        
+	        submitHandler: function(form) {
+	            form.submit();
+	        }
+	    });
+
+	  });
+
+	</script>
+
+	<form class="form-horizontal carrersForm" action="" method="post" id="careers-form" novalidate="novalidate">
+
+		<label for="inputPost">Post applying for</label>
+		<input type="text" id="inputPost" name="inputPost">
+
+	    <label for="inputName">Name of the Candidate</label>
+	    <input type="text" minlength="2" id="inputName" name="inputName" required/>
+
+	    <label for="inputEdu">Educational Qualification</label>
+	    <input type="text" id="inputEdu" name="inputEdu">
+
+	    <label for="inputExpertise">Area of Expertise</label>
+	     <input type="text" id="inputExpertise" name="inputExpertise">
+
+	    <label for="inputExp">Total Experience</label>
+	    <input type="text" id="inputExp" name="inputExp">
+
+	    <label for="inputAddrs">Address</label>
+	    <textarea rows="3" id="inputAddrs" name="inputAddrs"></textarea>
+
+	    <label for="inputPhone">Phone Number</label>
+	    <input type="telephone" id="inputPhone" name="inputPhone" required/>
+
+	    <label for="inputEmail">Email</label>
+	    <input type="email" id="inputEmail" name="inputEmail">
+
+	    <label for="inputSalary">Current Salary (per annum)</label>
+	    <input type="number" id="inputSalary" name="inputSalary">
+
+	    <label for="inputResume">Paste your Resume</label>
+	    <textarea rows="3" id="inputResume" name="inputResume"></textarea>
+
+	    <label for="inputResume">&nbsp;</label>
+	    <input type="submit" value="Submit" name="submit">
+      	<input type="reset" value="Reset" name="reset">
+
+	</form>
+
+<!-- <script type="text/javascript" src="js/careersValidate.js"></script> -->
+
+</div>

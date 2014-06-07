@@ -22,7 +22,7 @@ $(document).ready(function(){
 	});
 
 	$("#careersNav, #careersFtNav").click(function(){
-		$("#bodyContent").load("ajax/careersAjax.html");
+		// $("#bodyContent").load("ajax/careersAjax_JQuery.html");
 		$("ul > li").removeClass("active");
 		$("#careersNav, #careersFtNav").parent().addClass("active");
 		$(".prevArrow").css("display","none");
